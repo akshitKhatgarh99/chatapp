@@ -6,6 +6,11 @@ struct Message: Codable, Equatable {
     let content: String
 }
 
+struct Conversation: Identifiable {
+    let id = UUID()
+    var messages: [Message]
+}
+
 struct ChatCompletionResponse: Decodable {
     let choices: [ChatCompletionChoice]
 }
@@ -18,73 +23,164 @@ struct ChatCompletionMessage: Decodable {
     let content: String
 }
 
-struct ContentView: View {
+struct ConversationListView: View {
+    @State private var conversations: [Conversation] = []
+    @State private var selectedConversationIndex: Int?
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                HStack {
+                    Text("EchoBot")
+                        .font(.largeTitle)
+                        .bold()
+                    Image(systemName: "bubble.left.fill")
+                        .font(.system(size: 26))
+                        .foregroundColor(Color.blue)
+                }
+                .padding()
+                
+                if conversations.isEmpty {
+                    Text("Welcome to EchoBot! Start a new conversation.")
+                        .foregroundColor(.gray)
+                        .padding()
+                } else {
+                    List {
+                        ForEach(conversations.indices, id: \.self) { index in
+                            NavigationLink(
+                                destination: ChatView(conversation: $conversations[index]),
+                                tag: index,
+                                selection: $selectedConversationIndex
+                            ) {
+                                Text("Conversation \(index + 1)")
+                            }
+                        }
+                        .onDelete(perform: deleteConversation)
+                    }
+                    .listStyle(PlainListStyle())
+                }
+                
+                Button(action: {
+                    startNewConversation()
+                }) {
+                    Text("Start a new conversation")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                .padding()
+            }
+            .navigationBarHidden(true)
+        }
+        .accentColor(colorScheme == .dark ? .white : .black)
+    }
+    
+    func startNewConversation() {
+        let newConversation = Conversation(messages: [])
+        conversations.append(newConversation)
+        selectedConversationIndex = conversations.count - 1
+    }
+    
+    func deleteConversation(at offsets: IndexSet) {
+        conversations.remove(atOffsets: offsets)
+    }
+}
+
+struct ChatView: View {
+    @Binding var conversation: Conversation
     @State private var messageText = ""
-    @State var messages: [Message] = []
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) var presentationMode
     let openaiApiKey = "esecret_ctyfftvnkwxucq3ftfhmqax14s" // Replace with your actual API key
     
     var body: some View {
         VStack {
             HStack {
-                Text("EchoBot")
-                    .font(.largeTitle)
-                    .bold()
-                Image(systemName: "bubble.left.fill")
-                    .font(.system(size: 26))
-                    .foregroundColor(Color.blue)
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 24))
+                        .foregroundColor(.blue)
+                }
+                .padding()
+                
+                Spacer()
+                
+                HStack {
+                    Text("EchoBot")
+                        .font(.largeTitle)
+                        .bold()
+                    Image(systemName: "bubble.left.fill")
+                        .font(.system(size: 26))
+                        .foregroundColor(Color.blue)
+                }
+                
+                Spacer()
             }
+            .padding()
+            
             ScrollViewReader { proxy in
                 ScrollView {
-                    ForEach(messages.indices, id: \.self) { index in
-                        let message = messages[index]
+                    ForEach(conversation.messages.indices, id: \.self) { index in
+                        let message = conversation.messages[index]
                         MessageView(message: message)
                             .id(index)
                     }
                 }
-                .onChange(of: messages) { _ in
+                .onChange(of: conversation.messages) { _ in
                     withAnimation {
-                        proxy.scrollTo(messages.count - 1, anchor: .bottom)
+                        proxy.scrollTo(conversation.messages.count - 1, anchor: .bottom)
                     }
                 }
             }
-            .background(Color.gray.opacity(0.1))
+            .background(colorScheme == .dark ? Color.black : Color.white)
             
             HStack {
                 TextField("Type something", text: $messageText)
                     .padding()
-                    .background(Color.gray.opacity(0.1))
+                    .background(colorScheme == .dark ? Color.gray.opacity(0.2) : Color.gray.opacity(0.1))
                     .cornerRadius(20)
                     .onSubmit {
                         sendMessage(message: messageText)
                     }
+                
                 Button {
                     sendMessage(message: messageText)
                 } label: {
                     Image(systemName: "paperplane.fill")
+                        .foregroundColor(.white)
                 }
-                .font(.system(size: 26))
-                .padding(.horizontal, 10)
+                .font(.system(size: 24))
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(10)
             }
             .padding()
         }
+        .navigationBarHidden(true)
     }
     
     func sendMessage(message: String) {
         withAnimation {
-            messages.append(Message(role: "user", content: message))
+            conversation.messages.append(Message(role: "user", content: message))
             self.messageText = ""
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 withAnimation {
                     sendMessageToServer(message: message) { response in
-                        messages.append(Message(role: "assistant", content: response))
+                        conversation.messages.append(Message(role: "assistant", content: response))
                     }
                 }
             }
         }
     }
     
+    
     func sendMessageToServer(message: String, completion: @escaping (String) -> Void) {
-        let jsonMessages = messages.suffix(20).map { message -> [String: String] in
+        let jsonMessages = conversation.messages.suffix(20).map { message -> [String: String] in
             return ["role": message.role, "content": message.content]
         }
         
@@ -117,6 +213,7 @@ struct ContentView: View {
                 }
             }
     }
+
 }
 
 struct MessageView: View {
@@ -153,6 +250,12 @@ struct ChatBubble: Shape {
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, isFromCurrentUser ? .bottomLeft : .bottomRight], cornerRadii: CGSize(width: 16, height: 16))
         return Path(path.cgPath)
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        ConversationListView()
     }
 }
 
