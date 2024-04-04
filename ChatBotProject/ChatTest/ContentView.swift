@@ -9,6 +9,13 @@ struct Message: Codable, Equatable {
 struct Conversation: Identifiable {
     let id = UUID()
     var messages: [Message]
+    var name: String {
+        if let firstMessage = messages.first(where: { $0.role == "user" }) {
+            return firstMessage.content
+        } else {
+            return "New Conversation"
+        }
+    }
 }
 
 struct ChatCompletionResponse: Decodable {
@@ -25,7 +32,6 @@ struct ChatCompletionMessage: Decodable {
 
 struct ConversationListView: View {
     @State private var conversations: [Conversation] = []
-    @State private var selectedConversationIndex: Int?
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -49,11 +55,11 @@ struct ConversationListView: View {
                     List {
                         ForEach(conversations.indices, id: \.self) { index in
                             NavigationLink(
-                                destination: ChatView(conversation: $conversations[index]),
-                                tag: index,
-                                selection: $selectedConversationIndex
+                                destination: ChatView(conversation: $conversations[index], onEmptyConversation: {
+                                    deleteEmptyConversation(at: index)
+                                })
                             ) {
-                                Text("Conversation \(index + 1)")
+                                Text(conversations[index].name)
                             }
                         }
                         .onDelete(perform: deleteConversation)
@@ -81,7 +87,10 @@ struct ConversationListView: View {
     func startNewConversation() {
         let newConversation = Conversation(messages: [])
         conversations.append(newConversation)
-        selectedConversationIndex = conversations.count - 1
+    }
+    
+    func deleteEmptyConversation(at index: Int) {
+        conversations.remove(at: index)
     }
     
     func deleteConversation(at offsets: IndexSet) {
@@ -91,6 +100,7 @@ struct ConversationListView: View {
 
 struct ChatView: View {
     @Binding var conversation: Conversation
+    var onEmptyConversation: () -> Void
     @State private var messageText = ""
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) var presentationMode
@@ -162,6 +172,11 @@ struct ChatView: View {
             .padding()
         }
         .navigationBarHidden(true)
+        .onDisappear {
+            if conversation.messages.isEmpty {
+                onEmptyConversation()
+            }
+        }
     }
     
     func sendMessage(message: String) {
@@ -178,10 +193,16 @@ struct ChatView: View {
         }
     }
     
-    
     func sendMessageToServer(message: String, completion: @escaping (String) -> Void) {
-        let jsonMessages = conversation.messages.suffix(20).map { message -> [String: String] in
+        let maxWords = 500
+        var jsonMessages = conversation.messages.suffix(20).map { message -> [String: String] in
             return ["role": message.role, "content": message.content]
+        }
+        
+        var totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
+        while totalWords + message.split(separator: " ").count > maxWords {
+            jsonMessages.removeFirst()
+            totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
         }
         
         let parameters: [String: Any] = [
@@ -213,7 +234,6 @@ struct ChatView: View {
                 }
             }
     }
-
 }
 
 struct MessageView: View {
