@@ -6,8 +6,8 @@ struct Message: Codable, Equatable {
     let content: String
 }
 
-struct Conversation: Identifiable {
-    let id = UUID()
+struct Conversation: Codable, Identifiable {
+    var id: UUID
     var messages: [Message]
     var name: String {
         if let firstMessage = messages.first(where: { $0.role == "user" }) {
@@ -15,6 +15,11 @@ struct Conversation: Identifiable {
         } else {
             return "New Conversation"
         }
+    }
+    
+    init(id: UUID = UUID(), messages: [Message]) {
+        self.id = id
+        self.messages = messages
     }
 }
 
@@ -30,8 +35,32 @@ struct ChatCompletionMessage: Decodable {
     let content: String
 }
 
+class ConversationStore: ObservableObject {
+    @Published var conversations: [Conversation] = []
+    
+    init() {
+        loadConversations()
+    }
+    
+    func saveConversations() {
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(conversations) {
+            UserDefaults.standard.set(encodedData, forKey: "conversations")
+        }
+    }
+    
+    func loadConversations() {
+        if let data = UserDefaults.standard.data(forKey: "conversations") {
+            let decoder = JSONDecoder()
+            if let decodedConversations = try? decoder.decode([Conversation].self, from: data) {
+                conversations = decodedConversations
+            }
+        }
+    }
+}
+
 struct ConversationListView: View {
-    @State private var conversations: [Conversation] = []
+    @StateObject private var conversationStore = ConversationStore()
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -47,19 +76,19 @@ struct ConversationListView: View {
                 }
                 .padding()
                 
-                if conversations.isEmpty {
+                if conversationStore.conversations.isEmpty {
                     Text("Welcome to EchoBot! Start a new conversation.")
                         .foregroundColor(.gray)
                         .padding()
                 } else {
                     List {
-                        ForEach(conversations.indices, id: \.self) { index in
+                        ForEach(conversationStore.conversations.indices, id: \.self) { index in
                             NavigationLink(
-                                destination: ChatView(conversation: $conversations[index], onEmptyConversation: {
+                                destination: ChatView(conversation: $conversationStore.conversations[index], onEmptyConversation: {
                                     deleteEmptyConversation(at: index)
                                 })
                             ) {
-                                Text(conversations[index].name)
+                                Text(conversationStore.conversations[index].name)
                             }
                         }
                         .onDelete(perform: deleteConversation)
@@ -86,15 +115,18 @@ struct ConversationListView: View {
     
     func startNewConversation() {
         let newConversation = Conversation(messages: [])
-        conversations.append(newConversation)
+        conversationStore.conversations.append(newConversation)
+        conversationStore.saveConversations()
     }
     
     func deleteEmptyConversation(at index: Int) {
-        conversations.remove(at: index)
+        conversationStore.conversations.remove(at: index)
+        conversationStore.saveConversations()
     }
     
     func deleteConversation(at offsets: IndexSet) {
-        conversations.remove(atOffsets: offsets)
+        conversationStore.conversations.remove(atOffsets: offsets)
+        conversationStore.saveConversations()
     }
 }
 
@@ -176,6 +208,7 @@ struct ChatView: View {
             if conversation.messages.isEmpty {
                 onEmptyConversation()
             }
+            ConversationStore().saveConversations()
         }
     }
     
@@ -187,6 +220,7 @@ struct ChatView: View {
                 withAnimation {
                     sendMessageToServer(message: message) { response in
                         conversation.messages.append(Message(role: "assistant", content: response))
+                        ConversationStore().saveConversations()
                     }
                 }
             }
@@ -270,6 +304,18 @@ struct ChatBubble: Shape {
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, isFromCurrentUser ? .bottomLeft : .bottomRight], cornerRadii: CGSize(width: 16, height: 16))
         return Path(path.cgPath)
+    }
+}
+
+@main
+struct ChatTestApp: App {
+    @StateObject private var conversationStore = ConversationStore()
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environmentObject(conversationStore)
+        }
     }
 }
 
