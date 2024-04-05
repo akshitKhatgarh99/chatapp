@@ -111,6 +111,9 @@ struct ConversationListView: View {
             .navigationBarHidden(true)
         }
         .accentColor(colorScheme == .dark ? .white : .black)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+                    conversationStore.saveConversations()
+                }
     }
     
     func startNewConversation() {
