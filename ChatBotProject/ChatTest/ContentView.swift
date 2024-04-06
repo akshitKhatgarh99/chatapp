@@ -86,7 +86,7 @@ struct ConversationListView: View {
                             NavigationLink(
                                 destination: ChatView(conversation: $conversationStore.conversations[index], onEmptyConversation: {
                                     deleteEmptyConversation(at: index)
-                                })
+                                }, conversationStore: conversationStore)
                             ) {
                                 Text(conversationStore.conversations[index].name)
                             }
@@ -139,6 +139,7 @@ struct ChatView: View {
     @State private var messageText = ""
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) var presentationMode
+    var conversationStore: ConversationStore
     let openaiApiKey = "esecret_ctyfftvnkwxucq3ftfhmqax14s" // Replace with your actual API key
     
     var body: some View {
@@ -211,7 +212,7 @@ struct ChatView: View {
             if conversation.messages.isEmpty {
                 onEmptyConversation()
             }
-            ConversationStore().saveConversations()
+            conversationStore.saveConversations()
         }
     }
     
@@ -223,7 +224,7 @@ struct ChatView: View {
                 withAnimation {
                     sendMessageToServer(message: message) { response in
                         conversation.messages.append(Message(role: "assistant", content: response))
-                        ConversationStore().saveConversations()
+                        conversationStore.saveConversations()
                     }
                 }
             }
