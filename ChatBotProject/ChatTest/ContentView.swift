@@ -1,5 +1,6 @@
 import SwiftUI
 import Alamofire
+import os
 
 struct Message: Codable, Equatable {
     let role: String
@@ -112,8 +113,8 @@ struct ConversationListView: View {
         }
         .accentColor(colorScheme == .dark ? .white : .black)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
-                    conversationStore.saveConversations()
-                }
+            conversationStore.saveConversations()
+        }
     }
     
     func startNewConversation() {
@@ -233,24 +234,36 @@ struct ChatView: View {
     
     func sendMessageToServer(message: String, completion: @escaping (String) -> Void) {
         let maxWords = 500
+
+        // Debugging: Print current conversation messages
+        print("Current messages: \(conversation.messages.map { $0.content })")
+
+        // Take the last 20 messages from the conversation
         var jsonMessages = conversation.messages.suffix(20).map { message -> [String: String] in
             return ["role": message.role, "content": message.content]
         }
         
+        // Calculate the total word count of these messages
         var totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
-        while totalWords + message.split(separator: " ").count > maxWords {
-            jsonMessages.removeFirst()
-            totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
+        
+        // Check and add new message only if it's not the last message already present
+        if jsonMessages.last?["content"] != message {
+            let newMessageWordCount = message.split(separator: " ").count
+            while totalWords + newMessageWordCount > maxWords {
+                jsonMessages.removeFirst()
+                totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
+            }
+            // Append the new user message
+            jsonMessages.append(["role": "user", "content": message])
         }
         
         let parameters: [String: Any] = [
-            "model": "meta-llama/Llama-2-70b-chat-hf",
-            "messages": jsonMessages + [["role": "user", "content": message]],
+            "model": "mistralai/Mixtral-8x7B-Instruct-v0.1:akshit:UBXmwGF",
+            "messages": jsonMessages,
             "temperature": 0.7
         ]
         
-        let url = "https://api.endpoints.anyscale.com/v1/chat/completions" // Replace with the actual API base URL
-        
+        let url = "http://localhost:8080/chat" // Adjust as necessary
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
             "Authorization": "Bearer \(openaiApiKey)"
@@ -267,11 +280,12 @@ struct ChatView: View {
                         completion("Sorry, no response received from the API.")
                     }
                 case .failure(let error):
-                    print("Error: \(error)")
+                    os_log("Network error: %s", log: OSLog.default, type: .error, error.localizedDescription)
                     completion("Sorry, something went wrong.")
                 }
             }
     }
+
 }
 
 struct MessageView: View {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A1A059B274977230080BB0D /* ChatTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A059A274977230080BB0D /* ChatTestApp.swift */; };
 		7A1A059D274977230080BB0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A059C274977230080BB0D /* ContentView.swift */; };
 		7A1A059F274977240080BB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1A059E274977240080BB0D /* Assets.xcassets */; };
 		7A1A05A2274977240080BB0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1A05A1274977240080BB0D /* Preview Assets.xcassets */; };
@@ -21,7 +20,6 @@
 		2DA46484D34B3F5533464EF6 /* Pods_ChatTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		480B980E7A69A4DC5C8D999A /* Pods-ChatTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatTest.debug.xcconfig"; path = "Target Support Files/Pods-ChatTest/Pods-ChatTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7A1A0597274977230080BB0D /* ChatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A1A059A274977230080BB0D /* ChatTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTestApp.swift; sourceTree = "<group>"; };
 		7A1A059C274977230080BB0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A1A059E274977240080BB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A1A05A1274977240080BB0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 		7A1A0599274977230080BB0D /* ChatTest */ = {
 			isa = PBXGroup;
 			children = (
-				7A1A059A274977230080BB0D /* ChatTestApp.swift */,
 				7A1A059C274977230080BB0D /* ContentView.swift */,
 				7A1A05AA27497FD90080BB0D /* BotResponse.swift */,
 				7A1A059E274977240080BB0D /* Assets.xcassets */,
@@ -213,7 +210,6 @@
 			files = (
 				7A1A05AB27497FD90080BB0D /* BotResponse.swift in Sources */,
 				7A1A059D274977230080BB0D /* ContentView.swift in Sources */,
-				7A1A059B274977230080BB0D /* ChatTestApp.swift in Sources */,
 				7A1A05A9274979F10080BB0D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
