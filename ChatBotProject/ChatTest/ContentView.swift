@@ -63,6 +63,7 @@ class ConversationStore: ObservableObject {
 struct ConversationListView: View {
     @StateObject private var conversationStore = ConversationStore()
     @Environment(\.colorScheme) var colorScheme
+    @State private var activeConversation: UUID?
     
     var body: some View {
         NavigationView {
@@ -87,7 +88,9 @@ struct ConversationListView: View {
                             NavigationLink(
                                 destination: ChatView(conversation: $conversationStore.conversations[index], onEmptyConversation: {
                                     deleteEmptyConversation(at: index)
-                                }, conversationStore: conversationStore)
+                                }, conversationStore: conversationStore),
+                                tag: conversationStore.conversations[index].id,
+                                selection: $activeConversation
                             ) {
                                 Text(conversationStore.conversations[index].name)
                             }
@@ -97,9 +100,7 @@ struct ConversationListView: View {
                     .listStyle(PlainListStyle())
                 }
                 
-                Button(action: {
-                    startNewConversation()
-                }) {
+                Button(action: startNewConversation) {
                     Text("Start a new conversation")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -118,14 +119,17 @@ struct ConversationListView: View {
     }
     
     func startNewConversation() {
-        let newConversation = Conversation(messages: [])
+        let newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello! How can I assist you today?")])
         conversationStore.conversations.append(newConversation)
+        activeConversation = newConversation.id
         conversationStore.saveConversations()
     }
     
     func deleteEmptyConversation(at index: Int) {
-        conversationStore.conversations.remove(at: index)
-        conversationStore.saveConversations()
+        if conversationStore.conversations[index].messages.isEmpty {
+            conversationStore.conversations.remove(at: index)
+            conversationStore.saveConversations()
+        }
     }
     
     func deleteConversation(at offsets: IndexSet) {
@@ -288,76 +292,75 @@ struct ChatView: View {
     }
     
     func getUniqueIdentifier() -> String {
-        // Check if the identifier is already saved in UserDefaults
-        if let storedIdentifier = UserDefaults.standard.string(forKey: "uniqueIdentifier") {
-            return storedIdentifier
+            // Check if the identifier is already saved in UserDefaults
+            if let storedIdentifier = UserDefaults.standard.string(forKey: "uniqueIdentifier") {
+                return storedIdentifier
+            }
+            
+            // Generate a new UUID and store it
+            let newIdentifier = UUID().uuidString
+            UserDefaults.standard.set(newIdentifier, forKey: "uniqueIdentifier")
+            return newIdentifier
         }
-        
-        // Generate a new UUID and store it
-        let newIdentifier = UUID().uuidString
-        UserDefaults.standard.set(newIdentifier, forKey: "uniqueIdentifier")
-        return newIdentifier
     }
 
-}
+    struct MessageView: View {
+        let message: Message
+        
+        var body: some View {
+            HStack {
+                if message.role == "user" {
+                    Spacer()
+                    Text(message.content)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .clipShape(ChatBubble(isFromCurrentUser: true))
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 10)
+                } else {
+                    Text(message.content)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .clipShape(ChatBubble(isFromCurrentUser: false))
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 10)
+                    Spacer()
+                }
+            }
+            .animation(.default, value: message)
+        }
+    }
 
-struct MessageView: View {
-    let message: Message
-    
-    var body: some View {
-        HStack {
-            if message.role == "user" {
-                Spacer()
-                Text(message.content)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .clipShape(ChatBubble(isFromCurrentUser: true))
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 10)
-            } else {
-                Text(message.content)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .clipShape(ChatBubble(isFromCurrentUser: false))
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 10)
-                Spacer()
+    struct ChatBubble: Shape {
+        var isFromCurrentUser: Bool
+        
+        func path(in rect: CGRect) -> Path {
+            let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, isFromCurrentUser ? .bottomLeft : .bottomRight], cornerRadii: CGSize(width: 16, height: 16))
+            return Path(path.cgPath)
+        }
+    }
+
+    @main
+    struct ChatTestApp: App {
+        @StateObject private var conversationStore = ConversationStore()
+        
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
+                    .environmentObject(conversationStore)
             }
         }
-        .animation(.default, value: message)
     }
-}
 
-struct ChatBubble: Shape {
-    var isFromCurrentUser: Bool
-    
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, isFromCurrentUser ? .bottomLeft : .bottomRight], cornerRadii: CGSize(width: 16, height: 16))
-        return Path(path.cgPath)
-    }
-}
-
-@main
-struct ChatTestApp: App {
-    @StateObject private var conversationStore = ConversationStore()
-    
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environmentObject(conversationStore)
+    struct ContentView: View {
+        var body: some View {
+            ConversationListView()
         }
     }
-}
 
-struct ContentView: View {
-    var body: some View {
-        ConversationListView()
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
