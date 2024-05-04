@@ -157,7 +157,8 @@ struct ChatView: View {
                         .font(.system(size: 24))
                         .foregroundColor(.blue)
                 }
-                .padding()
+                .padding(.top, 10)
+                .padding(.leading, 16)
                 
                 Spacer()
                 
@@ -172,7 +173,7 @@ struct ChatView: View {
                 
                 Spacer()
             }
-            .padding()
+            .padding(.horizontal, 16)
             
             ScrollViewReader { proxy in
                 ScrollView {
@@ -192,12 +193,9 @@ struct ChatView: View {
             
             HStack {
                 TextField("Type something", text: $messageText)
-                    .padding()
+                    .padding(8)
                     .background(colorScheme == .dark ? Color.gray.opacity(0.2) : Color.gray.opacity(0.1))
-                    .cornerRadius(20)
-                    .onSubmit {
-                        sendMessage(message: messageText)
-                    }
+                    .cornerRadius(10)
                 
                 Button {
                     sendMessage(message: messageText)
@@ -205,12 +203,13 @@ struct ChatView: View {
                     Image(systemName: "paperplane.fill")
                         .foregroundColor(.white)
                 }
-                .font(.system(size: 24))
-                .padding()
+                .padding(8)
                 .background(Color.blue)
-                .cornerRadius(10)
+                .cornerRadius(8)
+                .font(.system(size: 20))
             }
-            .padding()
+            .padding(.horizontal, 16)
+            .padding(.bottom, 10)
         }
         .navigationBarHidden(true)
         .onDisappear {
