@@ -263,10 +263,11 @@ struct ChatView: View {
             "temperature": 0.7
         ]
         
-        let url = "http://localhost:8080/chat" // Adjust as necessary
+        let url = "https://echobotapp.com:8080/chat" // Adjust as necessary
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "Authorization": "Bearer \(openaiApiKey)"
+            "Authorization": "Bearer \(openaiApiKey)",
+            "User-Identifier": getUniqueIdentifier() // Add the user identifier header
         ]
         
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
@@ -284,6 +285,18 @@ struct ChatView: View {
                     completion("Sorry, something went wrong.")
                 }
             }
+    }
+    
+    func getUniqueIdentifier() -> String {
+        // Check if the identifier is already saved in UserDefaults
+        if let storedIdentifier = UserDefaults.standard.string(forKey: "uniqueIdentifier") {
+            return storedIdentifier
+        }
+        
+        // Generate a new UUID and store it
+        let newIdentifier = UUID().uuidString
+        UserDefaults.standard.set(newIdentifier, forKey: "uniqueIdentifier")
+        return newIdentifier
     }
 
 }
