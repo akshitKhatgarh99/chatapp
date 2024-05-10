@@ -65,17 +65,37 @@ struct ConversationListView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var activeConversation: UUID?
     @State private var showDisclaimer: Bool = !UserDefaults.standard.bool(forKey: "DisclaimerAccepted")
+    @State private var showingSupportView = false
+    @State private var showingReferencesView = false
 
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
-                    Text("EchoBot")
-                        .font(.largeTitle)
-                        .bold()
-                    Image(systemName: "bubble.left.fill")
-                        .font(.system(size: 26))
-                        .foregroundColor(Color.blue)
+                    Spacer()
+                                    
+                   
+                        Text("EchoBot")
+                            .font(.largeTitle)
+                            .bold()
+                        
+                        Image(systemName: "bubble.left.fill")
+                            .font(.system(size: 26))
+                            .foregroundColor(Color.blue)
+                
+                    Spacer()
+                 
+                    
+                    Button(action: {
+                        showingSupportView = true
+                    }) {
+                        Image(systemName: "info.circle")
+                            .font(.system(size: 24))
+                            .foregroundColor(.blue)
+                    }
+                    .sheet(isPresented: $showingSupportView) {
+                        SupportView(showingSupportView: $showingSupportView, showingReferencesView: $showingReferencesView)
+                    }
                 }
                 .padding()
                 
@@ -91,6 +111,9 @@ struct ConversationListView: View {
         .accentColor(colorScheme == .dark ? .white : .black)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             conversationStore.saveConversations()
+        }
+        .sheet(isPresented: $showingReferencesView) {
+            ReferencesView(showingReferencesView: $showingReferencesView)
         }
     }
         
@@ -165,6 +188,18 @@ struct DisclaimerView: View {
                 .shadow(color: .gray.opacity(0.4), radius: 3, x: 2, y: 2)
                 .padding(.horizontal, 20)
             
+//            Text("Please note that EchoBot is an AI chatbot based on general knowledge and does not have access to specific medical references or sources. The information provided by EchoBot should not be considered as a substitute for professional medical advice, diagnosis, or treatment.")
+//                .font(.system(size: 14, weight: .medium, design: .rounded))
+//                .foregroundColor(.gray)
+//                .multilineTextAlignment(.center)
+//                .padding()
+//            
+//            Text("Always consult with a qualified healthcare professional for personalized medical advice and guidance.")
+//                .font(.system(size: 14, weight: .medium, design: .rounded))
+//                .foregroundColor(.gray)
+//                .multilineTextAlignment(.center)
+//                .padding()
+            
             Button("Accept") {
                 UserDefaults.standard.set(true, forKey: "DisclaimerAccepted")
                 showDisclaimer = false
@@ -185,6 +220,67 @@ struct DisclaimerView: View {
     }
 }
 
+struct SupportView: View {
+    @Binding var showingSupportView: Bool
+    @Binding var showingReferencesView: Bool
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text("Support")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding()
+                
+                Text("If you have any questions or need assistance, please contact our support team at echobot583@gmail.com ")
+                    .font(.body)
+                    .padding()
+                
+                Button(action: {
+                    showingSupportView = false
+                    showingReferencesView = true
+                }) {
+                    Text("View References")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                .padding()
+                
+                Spacer()
+            }
+            .navigationBarItems(trailing: Button("Close") {
+                showingSupportView = false
+            })
+        }
+    }
+}
+
+struct ReferencesView: View {
+    @Binding var showingReferencesView: Bool
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text("References")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding()
+                
+                Text("EchoBot's responses are generated based on patterns and information found in a diverse range of online sources. These sources are not curated for medical reliability and should not be considered a replacement for professional medical advice. For references go to http://echobotapp.com/support")
+                    .font(.body)
+                    .padding()
+                
+                Spacer()
+            }
+            .navigationBarItems(trailing: Button("Close") {
+                showingReferencesView = false
+            })
+        }
+    }
+}
 
 struct ChatView: View {
     @Binding var conversation: Conversation
