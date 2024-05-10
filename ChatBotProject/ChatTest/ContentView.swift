@@ -112,6 +112,7 @@ struct ConversationListView: View {
             }
             .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .accentColor(colorScheme == .dark ? .white : .black)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             conversationStore.saveConversations()
@@ -157,8 +158,9 @@ struct ChatView: View {
                         .font(.system(size: 24))
                         .foregroundColor(.blue)
                 }
-                .padding(.top, 10)
-                .padding(.leading, 16)
+                .padding(.top, 5)
+                .padding(.leading, 10)
+                
                 
                 Spacer()
                 
@@ -173,13 +175,12 @@ struct ChatView: View {
                 
                 Spacer()
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 10)
             
             ScrollViewReader { proxy in
                 ScrollView {
                     ForEach(conversation.messages.indices, id: \.self) { index in
-                        let message = conversation.messages[index]
-                        MessageView(message: message)
+                        MessageView(message: conversation.messages[index])
                             .id(index)
                     }
                 }
@@ -208,7 +209,7 @@ struct ChatView: View {
                 .cornerRadius(8)
                 .font(.system(size: 20))
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 10)
             .padding(.bottom, 10)
         }
         .navigationBarHidden(true)

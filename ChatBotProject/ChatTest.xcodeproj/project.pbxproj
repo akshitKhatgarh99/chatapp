@@ -10,8 +10,6 @@
 		7A1A059D274977230080BB0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A059C274977230080BB0D /* ContentView.swift */; };
 		7A1A059F274977240080BB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1A059E274977240080BB0D /* Assets.xcassets */; };
 		7A1A05A2274977240080BB0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1A05A1274977240080BB0D /* Preview Assets.xcassets */; };
-		7A1A05A9274979F10080BB0D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A05A8274979F10080BB0D /* Utils.swift */; };
-		7A1A05AB27497FD90080BB0D /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A05AA27497FD90080BB0D /* BotResponse.swift */; };
 		D5F54EBF34C3FD668A669F6E /* Pods_ChatTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA46484D34B3F5533464EF6 /* Pods_ChatTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +21,6 @@
 		7A1A059C274977230080BB0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A1A059E274977240080BB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A1A05A1274977240080BB0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7A1A05A8274979F10080BB0D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		7A1A05AA27497FD90080BB0D /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				7A1A059C274977230080BB0D /* ContentView.swift */,
-				7A1A05AA27497FD90080BB0D /* BotResponse.swift */,
 				7A1A059E274977240080BB0D /* Assets.xcassets */,
 				7A1A05A0274977240080BB0D /* Preview Content */,
-				7A1A05A8274979F10080BB0D /* Utils.swift */,
 			);
 			path = ChatTest;
 			sourceTree = "<group>";
@@ -208,9 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1A05AB27497FD90080BB0D /* BotResponse.swift in Sources */,
 				7A1A059D274977230080BB0D /* ContentView.swift in Sources */,
-				7A1A05A9274979F10080BB0D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -323,6 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -342,8 +336,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatTest/Preview Content\"";
+				DEVELOPMENT_TEAM = R3JM7QQV27;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = EchoBot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -354,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepalace.ChatTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepalace.EchoBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,6 +371,7 @@
 				DEVELOPMENT_TEAM = R3JM7QQV27;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = EchoBot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -385,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepalace.ChatTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepalace.EchoBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
