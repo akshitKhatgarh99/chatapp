@@ -64,7 +64,8 @@ struct ConversationListView: View {
     @StateObject private var conversationStore = ConversationStore()
     @Environment(\.colorScheme) var colorScheme
     @State private var activeConversation: UUID?
-    
+    @State private var showDisclaimer: Bool = !UserDefaults.standard.bool(forKey: "DisclaimerAccepted")
+
     var body: some View {
         NavigationView {
             VStack {
@@ -78,6 +79,23 @@ struct ConversationListView: View {
                 }
                 .padding()
                 
+                if showDisclaimer {
+                    DisclaimerView(showDisclaimer: $showDisclaimer)
+                } else {
+                    mainContent
+                }
+            }
+            .navigationBarHidden(true)
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .accentColor(colorScheme == .dark ? .white : .black)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+            conversationStore.saveConversations()
+        }
+    }
+        
+        var mainContent: some View {
+            Group {
                 if conversationStore.conversations.isEmpty {
                     Text("Welcome to EchoBot! Start a new conversation.")
                         .foregroundColor(.gray)
@@ -110,15 +128,8 @@ struct ConversationListView: View {
                 }
                 .padding()
             }
-            .navigationBarHidden(true)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .accentColor(colorScheme == .dark ? .white : .black)
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
-            conversationStore.saveConversations()
-        }
-    }
-    
+        
     func startNewConversation() {
         let newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello! How can I assist you today?")])
         conversationStore.conversations.append(newConversation)
@@ -136,6 +147,32 @@ struct ConversationListView: View {
     func deleteConversation(at offsets: IndexSet) {
         conversationStore.conversations.remove(atOffsets: offsets)
         conversationStore.saveConversations()
+    }
+}
+
+struct DisclaimerView: View {
+    @Binding var showDisclaimer: Bool
+    
+    var body: some View {
+        VStack {
+            Text("Disclaimer")
+                .font(.title)
+                .bold()
+                .padding()
+            Text("Reminder: This app is not a substitute for professional medical advice. Please consult a healthcare provider.")
+                .padding()
+            Button("Accept") {
+                UserDefaults.standard.set(true, forKey: "DisclaimerAccepted")
+                showDisclaimer = false
+            }
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.green)
+            .cornerRadius(10)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -160,7 +197,6 @@ struct ChatView: View {
                 }
                 .padding(.top, 5)
                 .padding(.leading, 10)
-                
                 
                 Spacer()
                 
