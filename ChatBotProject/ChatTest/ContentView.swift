@@ -154,27 +154,37 @@ struct DisclaimerView: View {
     @Binding var showDisclaimer: Bool
     
     var body: some View {
-        VStack {
-            Text("Disclaimer")
-                .font(.title)
-                .bold()
+        VStack(alignment: .center, spacing: 20) {
+            Spacer()
+            Text("By using this app, you acknowledge that I am an AI chatbot, not a licensed healthcare professional. I provide support based on general knowledge and do not replace professional advice. Use this information responsibly and at your own risk.")
+                .font(.system(size: 16, weight: .medium, design: .rounded))
+                .foregroundColor(.gray)
                 .padding()
-            Text("Reminder: This app is not a substitute for professional medical advice. Please consult a healthcare provider.")
-                .padding()
+                .background(Color.white)
+                .cornerRadius(12)
+                .shadow(color: .gray.opacity(0.4), radius: 3, x: 2, y: 2)
+                .padding(.horizontal, 20)
+            
             Button("Accept") {
                 UserDefaults.standard.set(true, forKey: "DisclaimerAccepted")
                 showDisclaimer = false
             }
+            .font(.headline)
             .foregroundColor(.white)
             .padding()
+            .frame(width: 280, height: 44)
             .background(Color.green)
-            .cornerRadius(10)
+            .cornerRadius(22)
+            .shadow(radius: 3)
+            
+            Spacer()
+            Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white)
-        .edgesIgnoringSafeArea(.all)
+        .background(Color.white.edgesIgnoringSafeArea(.all))
     }
 }
+
 
 struct ChatView: View {
     @Binding var conversation: Conversation
