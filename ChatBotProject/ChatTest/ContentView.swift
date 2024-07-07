@@ -1,10 +1,25 @@
 import SwiftUI
 import Alamofire
 import os
+import Firebase
+import FirebaseRemoteConfig
+import FirebaseFirestore
+import StoreKit
 
-struct Message: Codable, Equatable {
+// MARK: - Models
+
+struct Message: Codable, Equatable, Identifiable {
+    let id: UUID
     let role: String
     let content: String
+    let timestamp: Date
+    
+    init(id: UUID = UUID(), role: String, content: String, timestamp: Date = Date()) {
+        self.id = id
+        self.role = role
+        self.content = content
+        self.timestamp = timestamp
+    }
 }
 
 struct Conversation: Codable, Identifiable {
@@ -36,10 +51,138 @@ struct ChatCompletionMessage: Decodable {
     let content: String
 }
 
+// MARK: - Managers
+
+class ConfigManager: ObservableObject {
+    static let shared = ConfigManager()
+    
+    @Published var anyscaleUrl: String = "https://api.endpoints.anyscale.com/v1/chat/completions"
+    @Published var maxMessageLength: Int = 1000
+    @Published var freeMessageLimit: Int = 100
+    @Published var anyscaleApiKey: String = "YOUR_DEFAULT_API_KEY"
+    
+    private init() {
+        setupRemoteConfig()
+    }
+    
+    private func setupRemoteConfig() {
+        let remoteConfig = RemoteConfig.remoteConfig()
+        let settings = RemoteConfigSettings()
+        settings.minimumFetchInterval = 43200 // For development, set to 0. For production, set to a higher value.
+        remoteConfig.configSettings = settings
+        
+        remoteConfig.setDefaults([
+            "anyscale_url": self.anyscaleUrl as NSObject,
+            "max_message_length": self.maxMessageLength as NSObject,
+            "free_message_limit": self.freeMessageLimit as NSObject,
+            "anyscale_api_key": self.anyscaleApiKey as NSObject
+        ])
+    }
+    
+    func fetchConfig() {
+        RemoteConfig.remoteConfig().fetch { [weak self] (status, error) in
+            if status == .success {
+                RemoteConfig.remoteConfig().activate { [weak self] _, _ in
+                    self?.updateConfigValues()
+                }
+            } else {
+                print("Config fetch failed")
+            }
+        }
+    }
+    
+    private func updateConfigValues() {
+        let remoteConfig = RemoteConfig.remoteConfig()
+        
+        if let url = remoteConfig["anyscale_url"].stringValue {
+            self.anyscaleUrl = url
+        }
+        
+        if let length = remoteConfig["max_message_length"].numberValue as? Int {
+            self.maxMessageLength = length
+        }
+
+        if let limit = remoteConfig["free_message_limit"].numberValue as? Int {
+            self.freeMessageLimit = limit
+        }
+        
+        if let apiKey = remoteConfig["anyscale_api_key"].stringValue {
+            self.anyscaleApiKey = apiKey
+        }
+    }
+}
+
+class PurchaseManager: NSObject, ObservableObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
+    static let shared = PurchaseManager()
+    
+    @Published var hasActiveSubscription = false
+    private var product: SKProduct?
+    
+    private override init() {
+        super.init()
+        SKPaymentQueue.default().add(self)
+        fetchProducts()
+    }
+    
+    func fetchProducts() {
+        let request = SKProductsRequest(productIdentifiers: Set(["com.yourapp.monthlysubscription"]))
+        request.delegate = self
+        request.start()
+    }
+    
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        if let product = response.products.first {
+            self.product = product
+        }
+    }
+    
+    func purchaseSubscription() {
+        guard let product = self.product else {
+            print("Product not found")
+            return
+        }
+        
+        let payment = SKPayment(product: product)
+        SKPaymentQueue.default().add(payment)
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        for transaction in transactions {
+            switch transaction.transactionState {
+            case .purchased, .restored:
+                hasActiveSubscription = true
+                SKPaymentQueue.default().finishTransaction(transaction)
+            case .failed:
+                print("Transaction failed: \(transaction.error?.localizedDescription ?? "")")
+                SKPaymentQueue.default().finishTransaction(transaction)
+            case .deferred, .purchasing:
+                break
+            @unknown default:
+                break
+            }
+        }
+    }
+    
+    func restorePurchases() {
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
+}
+
 class ConversationStore: ObservableObject {
     @Published var conversations: [Conversation] = []
+    @Published var totalMessageCount: Int = 0
+    let userId: String
+    
+    private var db = Firestore.firestore()
     
     init() {
+        if let storedUserId = UserDefaults.standard.string(forKey: "userId") {
+            self.userId = storedUserId
+        } else {
+            let newUserId = UUID().uuidString
+            UserDefaults.standard.set(newUserId, forKey: "userId")
+            self.userId = newUserId
+        }
         loadConversations()
     }
     
@@ -48,6 +191,7 @@ class ConversationStore: ObservableObject {
         if let encodedData = try? encoder.encode(conversations) {
             UserDefaults.standard.set(encodedData, forKey: "conversations")
         }
+        updateTotalMessageCount()
     }
     
     func loadConversations() {
@@ -57,35 +201,68 @@ class ConversationStore: ObservableObject {
                 conversations = decodedConversations
             }
         }
+        updateTotalMessageCount()
+    }
+    
+    private func updateTotalMessageCount() {
+        totalMessageCount = conversations.reduce(0) { $0 + $1.messages.count }
+    }
+    
+    func backupToFirebase(conversation: Conversation) {
+        let conversationRef = db.collection("users").document(userId).collection("conversations").document(conversation.id.uuidString)
+        
+        conversationRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                // Update existing conversation
+                conversationRef.updateData([
+                    "messages": conversation.messages.map { [
+                        "id": $0.id.uuidString,
+                        "role": $0.role,
+                        "content": $0.content,
+                        "timestamp": Timestamp(date: $0.timestamp)
+                    ] }
+                ])
+            } else {
+                // Create new conversation
+                conversationRef.setData([
+                    "id": conversation.id.uuidString,
+                    "messages": conversation.messages.map { [
+                        "id": $0.id.uuidString,
+                        "role": $0.role,
+                        "content": $0.content,
+                        "timestamp": Timestamp(date: $0.timestamp)
+                    ] }
+                ])
+            }
+        }
     }
 }
 
+// MARK: - Views
+
 struct ConversationListView: View {
     @StateObject private var conversationStore = ConversationStore()
+    @StateObject private var configManager = ConfigManager.shared
+    @StateObject private var purchaseManager = PurchaseManager.shared
     @Environment(\.colorScheme) var colorScheme
     @State private var activeConversation: UUID?
     @State private var showDisclaimer: Bool = !UserDefaults.standard.bool(forKey: "DisclaimerAccepted")
     @State private var showingSupportView = false
     @State private var showingReferencesView = false
+    @State private var showingPurchasePrompt = false
 
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
                     Spacer()
-                                    
-                   
                         Text("EchoBot")
                             .font(.largeTitle)
                             .bold()
-                        
                         Image(systemName: "bubble.left.fill")
                             .font(.system(size: 26))
                             .foregroundColor(Color.blue)
-                
                     Spacer()
-                 
-                    
                     Button(action: {
                         showingSupportView = true
                     }) {
@@ -115,44 +292,56 @@ struct ConversationListView: View {
         .sheet(isPresented: $showingReferencesView) {
             ReferencesView(showingReferencesView: $showingReferencesView)
         }
-    }
-        
-        var mainContent: some View {
-            Group {
-                if conversationStore.conversations.isEmpty {
-                    Text("Welcome to EchoBot! Start a new conversation.")
-                        .foregroundColor(.gray)
-                        .padding()
-                } else {
-                    List {
-                        ForEach(conversationStore.conversations.indices, id: \.self) { index in
-                            NavigationLink(
-                                destination: ChatView(conversation: $conversationStore.conversations[index], onEmptyConversation: {
-                                    deleteEmptyConversation(at: index)
-                                }, conversationStore: conversationStore),
-                                tag: conversationStore.conversations[index].id,
-                                selection: $activeConversation
-                            ) {
-                                Text(conversationStore.conversations[index].name)
-                            }
-                        }
-                        .onDelete(perform: deleteConversation)
-                    }
-                    .listStyle(PlainListStyle())
-                }
-                
-                Button(action: startNewConversation) {
-                    Text("Start a new conversation")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                .padding()
-            }
+        .alert(isPresented: $showingPurchasePrompt) {
+            Alert(
+                title: Text("Upgrade to Monthly Subscription"),
+                message: Text("You've reached the free message limit for this month. Upgrade to continue chatting."),
+                primaryButton: .default(Text("Subscribe for $10/month"), action: purchaseManager.purchaseSubscription),
+                secondaryButton: .cancel()
+            )
         }
-        
+        .onAppear {
+            configManager.fetchConfig()
+            checkAndPromptForSubscription()
+        }
+    }
+    
+    var mainContent: some View {
+        Group {
+            if conversationStore.conversations.isEmpty {
+                Text("Welcome to EchoBot! Start a new conversation.")
+                    .foregroundColor(.gray)
+                    .padding()
+            } else {
+                List {
+                    ForEach(conversationStore.conversations.indices, id: \.self) { index in
+                        NavigationLink(
+                            destination: ChatView(conversation: $conversationStore.conversations[index], onEmptyConversation: {
+                                deleteEmptyConversation(at: index)
+                            }, conversationStore: conversationStore),
+                            tag: conversationStore.conversations[index].id,
+                            selection: $activeConversation
+                        ) {
+                            Text(conversationStore.conversations[index].name)
+                        }
+                    }
+                    .onDelete(perform: deleteConversation)
+                }
+                .listStyle(PlainListStyle())
+            }
+            
+            Button(action: startNewConversation) {
+                Text("Start a new conversation")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
+            .padding()
+        }
+    }
+    
     func startNewConversation() {
         let newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello! How can I assist you today?")])
         conversationStore.conversations.append(newConversation)
@@ -171,6 +360,12 @@ struct ConversationListView: View {
         conversationStore.conversations.remove(atOffsets: offsets)
         conversationStore.saveConversations()
     }
+    
+    func checkAndPromptForSubscription() {
+        if conversationStore.totalMessageCount >= configManager.freeMessageLimit && !purchaseManager.hasActiveSubscription {
+            showingPurchasePrompt = true
+        }
+    }
 }
 
 struct DisclaimerView: View {
@@ -187,18 +382,6 @@ struct DisclaimerView: View {
                 .cornerRadius(12)
                 .shadow(color: .gray.opacity(0.4), radius: 3, x: 2, y: 2)
                 .padding(.horizontal, 20)
-            
-//            Text("Please note that EchoBot is an AI chatbot based on general knowledge and does not have access to specific medical references or sources. The information provided by EchoBot should not be considered as a substitute for professional medical advice, diagnosis, or treatment.")
-//                .font(.system(size: 14, weight: .medium, design: .rounded))
-//                .foregroundColor(.gray)
-//                .multilineTextAlignment(.center)
-//                .padding()
-//            
-//            Text("Always consult with a qualified healthcare professional for personalized medical advice and guidance.")
-//                .font(.system(size: 14, weight: .medium, design: .rounded))
-//                .foregroundColor(.gray)
-//                .multilineTextAlignment(.center)
-//                .padding()
             
             Button("Accept") {
                 UserDefaults.standard.set(true, forKey: "DisclaimerAccepted")
@@ -272,25 +455,26 @@ struct ReferencesView: View {
                 Text("EchoBot's responses are generated based on patterns and information found in a diverse range of online sources. These sources are not curated for medical reliability and should not be considered a replacement for professional medical advice. For references go to http://echobotapp.com/support")
                     .font(.body)
                     .padding()
-                
-                Spacer()
-            }
-            .navigationBarItems(trailing: Button("Close") {
-                showingReferencesView = false
-            })
-        }
-    }
-}
+                    Spacer()
+                                }
+                                .navigationBarItems(trailing: Button("Close") {
+                                    showingReferencesView = false
+                                })
+                            }
+                        }
+                    }
 
-struct ChatView: View {
-    @Binding var conversation: Conversation
-    var onEmptyConversation: () -> Void
-    @State private var messageText = ""
-    @Environment(\.colorScheme) var colorScheme
-    @Environment(\.presentationMode) var presentationMode
-    var conversationStore: ConversationStore
-    let openaiApiKey = "esecret_ctyfftvnkwxucq3ftfhmqax14s" // Replace with your actual API key
-    
+    struct ChatView: View {
+        @Binding var conversation: Conversation
+        var onEmptyConversation: () -> Void
+        @State private var messageText = ""
+        @Environment(\.colorScheme) var colorScheme
+        @Environment(\.presentationMode) var presentationMode
+        var conversationStore: ConversationStore
+        @StateObject private var configManager = ConfigManager.shared
+        @StateObject private var purchaseManager = PurchaseManager.shared
+        @State private var showingPurchasePrompt = false
+        
     var body: some View {
         VStack {
             HStack {
@@ -303,7 +487,7 @@ struct ChatView: View {
                 }
                 .padding(.top, 5)
                 .padding(.leading, 10)
-                
+                                
                 Spacer()
                 
                 HStack {
@@ -321,14 +505,14 @@ struct ChatView: View {
             
             ScrollViewReader { proxy in
                 ScrollView {
-                    ForEach(conversation.messages.indices, id: \.self) { index in
-                        MessageView(message: conversation.messages[index])
-                            .id(index)
+                    ForEach(conversation.messages) { message in
+                        MessageView(message: message)
+                            .id(message.id)
                     }
                 }
                 .onChange(of: conversation.messages) { _ in
                     withAnimation {
-                        proxy.scrollTo(conversation.messages.count - 1, anchor: .bottom)
+                        proxy.scrollTo(conversation.messages.last?.id, anchor: .bottom)
                     }
                 }
             }
@@ -341,7 +525,7 @@ struct ChatView: View {
                     .cornerRadius(10)
                 
                 Button {
-                    sendMessage(message: messageText)
+                    sendMessage()
                 } label: {
                     Image(systemName: "paperplane.fill")
                         .foregroundColor(.white)
@@ -350,6 +534,7 @@ struct ChatView: View {
                 .background(Color.blue)
                 .cornerRadius(8)
                 .font(.system(size: 20))
+                .disabled(messageText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
             }
             .padding(.horizontal, 10)
             .padding(.bottom, 10)
@@ -361,46 +546,51 @@ struct ChatView: View {
             }
             conversationStore.saveConversations()
         }
-    }
-    
-    func sendMessage(message: String) {
-        withAnimation {
-            conversation.messages.append(Message(role: "user", content: message))
-            self.messageText = ""
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                withAnimation {
-                    sendMessageToServer(message: message) { response in
-                        conversation.messages.append(Message(role: "assistant", content: response))
-                        conversationStore.saveConversations()
-                    }
-                }
-            }
+        .alert(isPresented: $showingPurchasePrompt) {
+            Alert(
+                title: Text("Upgrade to Monthly Subscription"),
+                message: Text("You've reached the free message limit for this month. Upgrade to continue chatting."),
+                primaryButton: .default(Text("Subscribe for $10/month"), action: purchaseManager.purchaseSubscription),
+                secondaryButton: .cancel()
+            )
         }
     }
-    
-    func sendMessageToServer(message: String, completion: @escaping (String) -> Void) {
-        let maxWords = 500
-
-        // Debugging: Print current conversation messages
-        print("Current messages: \(conversation.messages.map { $0.content })")
-
-        // Take the last 20 messages from the conversation
-        var jsonMessages = conversation.messages.suffix(20).map { message -> [String: String] in
-            return ["role": message.role, "content": message.content]
+        
+    func sendMessage() {
+        let trimmedMessage = messageText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedMessage.isEmpty else { return }
+        
+        if conversationStore.totalMessageCount >= configManager.freeMessageLimit && !purchaseManager.hasActiveSubscription {
+            showingPurchasePrompt = true
+            return
         }
         
-        // Calculate the total word count of these messages
-        var totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
+        let newMessage = Message(role: "user", content: trimmedMessage)
+        conversation.messages.append(newMessage)
+        messageText = ""
         
-        // Check and add new message only if it's not the last message already present
-        if jsonMessages.last?["content"] != message {
-            let newMessageWordCount = message.split(separator: " ").count
-            while totalWords + newMessageWordCount > maxWords {
-                jsonMessages.removeFirst()
-                totalWords = jsonMessages.reduce(0) { $0 + $1["content"]!.split(separator: " ").count }
+        sendMessageToAnyscale(message: newMessage)
+        
+        if conversation.messages.count % 5 == 0 {
+            conversationStore.backupToFirebase(conversation: conversation)
+        }
+        
+        conversationStore.saveConversations()
+    }
+        
+    func sendMessageToAnyscale(message: Message) {
+        let maxTokens = configManager.maxMessageLength
+        
+        var jsonMessages: [[String: String]] = []
+        var totalTokens = 0
+        
+        for message in conversation.messages.reversed() {
+            let messageTokens = estimateTokenCount(message.content)
+            if totalTokens + messageTokens > maxTokens {
+                break
             }
-            // Append the new user message
-            jsonMessages.append(["role": "user", "content": message])
+            jsonMessages.insert(["role": message.role, "content": message.content], at: 0)
+            totalTokens += messageTokens
         }
         
         let parameters: [String: Any] = [
@@ -409,42 +599,42 @@ struct ChatView: View {
             "temperature": 0.7
         ]
         
-        let url = "https://echobotapp.com:8080/chat" // Adjust as necessary
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "Authorization": "Bearer \(openaiApiKey)",
-            "User-Identifier": getUniqueIdentifier() // Add the user identifier header
+            "Authorization": "Bearer \(configManager.anyscaleApiKey)"
         ]
         
-        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        AF.request(configManager.anyscaleUrl, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .responseDecodable(of: ChatCompletionResponse.self) { response in
                 switch response.result {
                 case .success(let chatCompletionResponse):
                     if let content = chatCompletionResponse.choices.first?.message.content {
                         let trimmedContent = content.trimmingCharacters(in: .whitespacesAndNewlines)
-                        completion(trimmedContent)
-                    } else {
-                        completion("Sorry, no response received from the API.")
+                        let assistantMessage = Message(role: "assistant", content: trimmedContent)
+                        DispatchQueue.main.async {
+                            self.conversation.messages.append(assistantMessage)
+                            self.conversationStore.saveConversations()
+                            
+                            if self.conversation.messages.count % 5 == 0 {
+                                self.conversationStore.backupToFirebase(conversation: self.conversation)
+                            }
+                        }
                     }
                 case .failure(let error):
-                    os_log("Network error: %s", log: OSLog.default, type: .error, error.localizedDescription)
-                    completion("Sorry, something went wrong.")
+                    print("Network error: \(error.localizedDescription)")
+                    let errorMessage = Message(role: "assistant", content: "Sorry, something went wrong. Please try again.")
+                    DispatchQueue.main.async {
+                        self.conversation.messages.append(errorMessage)
+                        self.conversationStore.saveConversations()
+                    }
                 }
             }
     }
-    
-    func getUniqueIdentifier() -> String {
-            // Check if the identifier is already saved in UserDefaults
-            if let storedIdentifier = UserDefaults.standard.string(forKey: "uniqueIdentifier") {
-                return storedIdentifier
-            }
-            
-            // Generate a new UUID and store it
-            let newIdentifier = UUID().uuidString
-            UserDefaults.standard.set(newIdentifier, forKey: "uniqueIdentifier")
-            return newIdentifier
-        }
+        
+    func estimateTokenCount(_ text: String) -> Int {
+        return text.split(separator: " ").count * 4 / 3
     }
+}
 
     struct MessageView: View {
         let message: Message
@@ -470,7 +660,6 @@ struct ChatView: View {
                     Spacer()
                 }
             }
-            .animation(.default, value: message)
         }
     }
 
@@ -483,26 +672,23 @@ struct ChatView: View {
         }
     }
 
-    @main
-    struct ChatTestApp: App {
-        @StateObject private var conversationStore = ConversationStore()
-        
-        var body: some Scene {
-            WindowGroup {
-                ContentView()
-                    .environmentObject(conversationStore)
-            }
-        }
-    }
-
-    struct ContentView: View {
-        var body: some View {
-            ConversationListView()
-        }
-    }
-
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
+                @main
+                struct ChatApp: App {
+                    @StateObject private var conversationStore = ConversationStore()
+                    
+                    init() {
+                        setupFirebase()
+                    }
+                    
+                    var body: some Scene {
+                        WindowGroup {
+                            ConversationListView()
+                                .environmentObject(conversationStore)
+                        }
+                    }
+                    
+                    private func setupFirebase() {
+                        FirebaseApp.configure()
+                    }
+                }
+                

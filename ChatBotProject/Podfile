@@ -6,5 +6,9 @@ target 'ChatTest' do
   use_frameworks!
   pod 'Alamofire'
   # Pods for ChatTest
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/RemoteConfig'
+ 
 
 end
