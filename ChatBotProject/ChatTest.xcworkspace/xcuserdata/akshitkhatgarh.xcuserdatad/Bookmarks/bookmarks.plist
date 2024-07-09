@@ -9,16 +9,12 @@
 			<dict>
 				<key>location-parameters</key>
 				<dict>
-					<key>EndingColumnNumber</key>
-					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>54</string>
-					<key>StartingColumnNumber</key>
-					<string>0</string>
+					<string>831</string>
 					<key>StartingLineNumber</key>
-					<string>54</string>
+					<string>831</string>
 					<key>Timestamp</key>
-					<string>741989215.510023</string>
+					<string>742201531.853866</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -36,14 +32,11 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>    }
-}
+				<string>                    }
+                }
 </string>
 				<key>trailing</key>
-				<string>
-class ConversationStore: ObservableObject {
-    @Published var conversations: [Conversation] = []
-</string>
+				<string></string>
 			</dict>
 			<key>type</key>
 			<string>bookmark</string>

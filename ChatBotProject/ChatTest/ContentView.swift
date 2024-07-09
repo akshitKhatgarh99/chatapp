@@ -59,7 +59,9 @@ class ConfigManager: ObservableObject {
     @Published var anyscaleUrl: String = "https://api.endpoints.anyscale.com/v1/chat/completions"
     @Published var maxMessageLength: Int = 1000
     @Published var freeMessageLimit: Int = 100
-    @Published var anyscaleApiKey: String = "YOUR_DEFAULT_API_KEY"
+    @Published var anyscaleApiKey: String = "esecret_ctyfftvnkwxucq3ftfhmqax14s"
+    @Published var model: String = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+    @Published var temperature: Double = 0.7
     
     private init() {
         setupRemoteConfig()
@@ -75,7 +77,9 @@ class ConfigManager: ObservableObject {
             "anyscale_url": self.anyscaleUrl as NSObject,
             "max_message_length": self.maxMessageLength as NSObject,
             "free_message_limit": self.freeMessageLimit as NSObject,
-            "anyscale_api_key": self.anyscaleApiKey as NSObject
+            "anyscale_api_key": self.anyscaleApiKey as NSObject,
+            "model": self.model as NSObject,
+            "temperature": self.temperature as NSObject
         ])
     }
     
@@ -109,31 +113,37 @@ class ConfigManager: ObservableObject {
         if let apiKey = remoteConfig["anyscale_api_key"].stringValue {
             self.anyscaleApiKey = apiKey
         }
+        
+        if let model = remoteConfig["model"].stringValue {
+               self.model = model
+        }
+           
+        if let temperature = remoteConfig["temperature"].numberValue as? Double {
+               self.temperature = temperature
+        }
     }
 }
 
-class PurchaseManager: NSObject, ObservableObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
+class PurchaseManager: NSObject, ObservableObject {
     static let shared = PurchaseManager()
     
     @Published var hasActiveSubscription = false
+    @Published var isLoading = false
+    
+    private let productIdentifier = "com.echobot.monthlysubscription"
     private var product: SKProduct?
     
     private override init() {
         super.init()
         SKPaymentQueue.default().add(self)
         fetchProducts()
+        checkSubscriptionStatus()
     }
     
     func fetchProducts() {
-        let request = SKProductsRequest(productIdentifiers: Set(["com.yourapp.monthlysubscription"]))
+        let request = SKProductsRequest(productIdentifiers: Set([productIdentifier]))
         request.delegate = self
         request.start()
-    }
-    
-    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        if let product = response.products.first {
-            self.product = product
-        }
     }
     
     func purchaseSubscription() {
@@ -142,16 +152,54 @@ class PurchaseManager: NSObject, ObservableObject, SKProductsRequestDelegate, SK
             return
         }
         
-        let payment = SKPayment(product: product)
-        SKPaymentQueue.default().add(payment)
+        if SKPaymentQueue.canMakePayments() {
+            let payment = SKPayment(product: product)
+            SKPaymentQueue.default().add(payment)
+        } else {
+            print("User can't make payments")
+        }
     }
     
+    func restorePurchases() {
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
+    
+    private func checkSubscriptionStatus() {
+        if let expirationDate = UserDefaults.standard.object(forKey: "subscriptionExpirationDate") as? Date {
+            hasActiveSubscription = expirationDate > Date()
+        } else {
+            hasActiveSubscription = false
+        }
+    }
+    
+    private func handlePurchased(_ transaction: SKPaymentTransaction) {
+        let expirationDate = Date().addingTimeInterval(30 * 24 * 60 * 60) // 30 days
+        UserDefaults.standard.set(expirationDate, forKey: "subscriptionExpirationDate")
+        hasActiveSubscription = true
+        SKPaymentQueue.default().finishTransaction(transaction)
+    }
+}
+
+extension PurchaseManager: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        DispatchQueue.main.async { [weak self] in
+            if let product = response.products.first {
+                self?.product = product
+                print("Product fetched: \(product.localizedTitle)")
+            } else {
+                print("No products found")
+            }
+            self?.isLoading = false
+        }
+    }
+}
+
+extension PurchaseManager: SKPaymentTransactionObserver {
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
             switch transaction.transactionState {
             case .purchased, .restored:
-                hasActiveSubscription = true
-                SKPaymentQueue.default().finishTransaction(transaction)
+                handlePurchased(transaction)
             case .failed:
                 print("Transaction failed: \(transaction.error?.localizedDescription ?? "")")
                 SKPaymentQueue.default().finishTransaction(transaction)
@@ -161,10 +209,6 @@ class PurchaseManager: NSObject, ObservableObject, SKProductsRequestDelegate, SK
                 break
             }
         }
-    }
-    
-    func restorePurchases() {
-        SKPaymentQueue.default().restoreCompletedTransactions()
     }
 }
 
@@ -250,18 +294,19 @@ struct ConversationListView: View {
     @State private var showingSupportView = false
     @State private var showingReferencesView = false
     @State private var showingPurchasePrompt = false
+    @State private var showingSubscriptionView = false
 
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
                     Spacer()
-                        Text("EchoBot")
-                            .font(.largeTitle)
-                            .bold()
-                        Image(systemName: "bubble.left.fill")
-                            .font(.system(size: 26))
-                            .foregroundColor(Color.blue)
+                    Text("EchoBot")
+                        .font(.largeTitle)
+                        .bold()
+                    Image(systemName: "bubble.left.fill")
+                        .font(.system(size: 26))
+                        .foregroundColor(Color.blue)
                     Spacer()
                     Button(action: {
                         showingSupportView = true
@@ -292,11 +337,16 @@ struct ConversationListView: View {
         .sheet(isPresented: $showingReferencesView) {
             ReferencesView(showingReferencesView: $showingReferencesView)
         }
+        .sheet(isPresented: $showingSubscriptionView) {
+            SubscriptionView(showingSubscriptionView: $showingSubscriptionView)
+        }
         .alert(isPresented: $showingPurchasePrompt) {
             Alert(
                 title: Text("Upgrade to Monthly Subscription"),
                 message: Text("You've reached the free message limit for this month. Upgrade to continue chatting."),
-                primaryButton: .default(Text("Subscribe for $10/month"), action: purchaseManager.purchaseSubscription),
+                primaryButton: .default(Text("Subscribe"), action: {
+                    showingSubscriptionView = true
+                }),
                 secondaryButton: .cancel()
             )
         }
@@ -339,6 +389,18 @@ struct ConversationListView: View {
                     .cornerRadius(10)
             }
             .padding()
+            
+            Button(action: {
+                showingSubscriptionView = true
+            }) {
+                Text(purchaseManager.hasActiveSubscription ? "Manage Subscription" : "Subscribe")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.green)
+                    .cornerRadius(10)
+            }
+            .padding(.bottom)
         }
     }
     
@@ -455,14 +517,84 @@ struct ReferencesView: View {
                 Text("EchoBot's responses are generated based on patterns and information found in a diverse range of online sources. These sources are not curated for medical reliability and should not be considered a replacement for professional medical advice. For references go to http://echobotapp.com/support")
                     .font(.body)
                     .padding()
+                
                     Spacer()
-                                }
-                                .navigationBarItems(trailing: Button("Close") {
-                                    showingReferencesView = false
-                                })
-                            }
                         }
+                        .navigationBarItems(trailing: Button("Close") {
+                            showingReferencesView = false
+                        })
                     }
+                }
+            }
+
+struct SubscriptionView: View {
+    @Binding var showingSubscriptionView: Bool
+    @ObservedObject private var purchaseManager = PurchaseManager.shared
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text("Subscription")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding()
+                
+                if purchaseManager.hasActiveSubscription {
+                    Text("You have an active subscription. Thank you for your support!")
+                        .font(.headline)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                    Button(action: {
+                        // Add action to manage subscription through App Store
+                    }) {
+                        Text("Manage Subscription")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    .padding()
+                } else {
+                    Text("Upgrade to Premium")
+                        .font(.headline)
+                        .padding()
+                    
+                    Text("Unlimited conversations with EchoBot")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    
+                    Button(action: {
+                        purchaseManager.purchaseSubscription()
+                    }) {
+                        Text("Subscribe for $10/month")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.green)
+                            .cornerRadius(10)
+                    }
+                    .padding()
+                    
+                    Button(action: {
+                        purchaseManager.restorePurchases()
+                    }) {
+                        Text("Restore Purchases")
+                            .font(.subheadline)
+                            .foregroundColor(.blue)
+                    }
+                    .padding()
+                }
+                
+                Spacer()
+            }
+            .navigationBarItems(trailing: Button("Close") {
+                showingSubscriptionView = false
+            })
+        }
+    }
+}
 
     struct ChatView: View {
         @Binding var conversation: Conversation
@@ -474,6 +606,7 @@ struct ReferencesView: View {
         @StateObject private var configManager = ConfigManager.shared
         @StateObject private var purchaseManager = PurchaseManager.shared
         @State private var showingPurchasePrompt = false
+        @State private var showingSubscriptionView = false
         
     var body: some View {
         VStack {
@@ -487,7 +620,7 @@ struct ReferencesView: View {
                 }
                 .padding(.top, 5)
                 .padding(.leading, 10)
-                                
+                
                 Spacer()
                 
                 HStack {
@@ -550,12 +683,17 @@ struct ReferencesView: View {
             Alert(
                 title: Text("Upgrade to Monthly Subscription"),
                 message: Text("You've reached the free message limit for this month. Upgrade to continue chatting."),
-                primaryButton: .default(Text("Subscribe for $10/month"), action: purchaseManager.purchaseSubscription),
+                primaryButton: .default(Text("Subscribe"), action: {
+                    showingSubscriptionView = true
+                }),
                 secondaryButton: .cancel()
             )
         }
+        .sheet(isPresented: $showingSubscriptionView) {
+            SubscriptionView(showingSubscriptionView: $showingSubscriptionView)
+        }
     }
-        
+    
     func sendMessage() {
         let trimmedMessage = messageText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedMessage.isEmpty else { return }
@@ -571,13 +709,13 @@ struct ReferencesView: View {
         
         sendMessageToAnyscale(message: newMessage)
         
-        if conversation.messages.count % 5 == 0 {
+        if conversation.messages.count % 7 == 0 {
             conversationStore.backupToFirebase(conversation: conversation)
         }
         
         conversationStore.saveConversations()
     }
-        
+    
     func sendMessageToAnyscale(message: Message) {
         let maxTokens = configManager.maxMessageLength
         
@@ -594,9 +732,9 @@ struct ReferencesView: View {
         }
         
         let parameters: [String: Any] = [
-            "model": "mistralai/Mixtral-8x7B-Instruct-v0.1:akshit:UBXmwGF",
+            "model": configManager.model,
             "messages": jsonMessages,
-            "temperature": 0.7
+            "temperature": configManager.temperature
         ]
         
         let headers: HTTPHeaders = [
@@ -615,7 +753,7 @@ struct ReferencesView: View {
                             self.conversation.messages.append(assistantMessage)
                             self.conversationStore.saveConversations()
                             
-                            if self.conversation.messages.count % 5 == 0 {
+                            if self.conversation.messages.count % 7 == 0 {
                                 self.conversationStore.backupToFirebase(conversation: self.conversation)
                             }
                         }
@@ -630,7 +768,7 @@ struct ReferencesView: View {
                 }
             }
     }
-        
+    
     func estimateTokenCount(_ text: String) -> Int {
         return text.split(separator: " ").count * 4 / 3
     }
@@ -659,9 +797,9 @@ struct ReferencesView: View {
                         .padding(.bottom, 10)
                     Spacer()
                 }
-            }
         }
     }
+}
 
     struct ChatBubble: Shape {
         var isFromCurrentUser: Bool
@@ -670,7 +808,7 @@ struct ReferencesView: View {
             let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, isFromCurrentUser ? .bottomLeft : .bottomRight], cornerRadii: CGSize(width: 16, height: 16))
             return Path(path.cgPath)
         }
-    }
+}
 
                 @main
                 struct ChatApp: App {
@@ -691,4 +829,3 @@ struct ReferencesView: View {
                         FirebaseApp.configure()
                     }
                 }
-                
