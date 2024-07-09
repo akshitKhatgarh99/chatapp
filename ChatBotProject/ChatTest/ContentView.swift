@@ -103,32 +103,36 @@ class ConfigManager: ObservableObject {
     private func updateConfigValues() {
         let remoteConfig = RemoteConfig.remoteConfig()
         
-        if let url = remoteConfig["anyscale_url"].stringValue {
-            self.anyscaleUrl = url
-        }
-        
-        if let length = remoteConfig["max_message_length"].numberValue as? Int {
-            self.maxMessageLength = length
-        }
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            
+            if let url = remoteConfig["anyscale_url"].stringValue {
+                self.anyscaleUrl = url
+            }
+            
+            if let length = remoteConfig["max_message_length"].numberValue as? Int {
+                self.maxMessageLength = length
+            }
 
-        if let limit = remoteConfig["free_message_limit"].numberValue as? Int {
-            self.freeMessageLimit = limit
-        }
-        
-        if let apiKey = remoteConfig["anyscale_api_key"].stringValue {
-            self.anyscaleApiKey = apiKey
-        }
-        
-        if let model = remoteConfig["model"].stringValue {
-               self.model = model
-        }
-           
-        if let temperature = remoteConfig["temperature"].numberValue as? Double {
-               self.temperature = temperature
-        }
-        
-        if let requiredVersion = remoteConfig["required_app_version"].stringValue {
-            self.requiredAppVersion = requiredVersion
+            if let limit = remoteConfig["free_message_limit"].numberValue as? Int {
+                self.freeMessageLimit = limit
+            }
+            
+            if let apiKey = remoteConfig["anyscale_api_key"].stringValue {
+                self.anyscaleApiKey = apiKey
+            }
+            
+            if let model = remoteConfig["model"].stringValue {
+                self.model = model
+            }
+               
+            if let temperature = remoteConfig["temperature"].numberValue as? Double {
+                self.temperature = temperature
+            }
+            
+            if let requiredVersion = remoteConfig["required_app_version"].stringValue {
+                self.requiredAppVersion = requiredVersion
+            }
         }
     }
     
@@ -754,7 +758,7 @@ struct SubscriptionView: View {
         
         sendMessageToAnyscale(message: newMessage)
         
-        if conversation.messages.count % 7 == 0 {
+        if conversation.messages.count % 2 == 0 {
             conversationStore.backupToFirebase(conversation: conversation)
         }
         
@@ -766,22 +770,28 @@ struct SubscriptionView: View {
         
         var jsonMessages: [[String: String]] = []
         var totalTokens = 0
-        
+        print("totalTokens")
+        print(totalTokens)
+        print("maxTokens")
+        print(maxTokens)
+        print("now printing text")
         for message in conversation.messages.reversed() {
             let messageTokens = estimateTokenCount(message.content)
+            print(message)
             if totalTokens + messageTokens > maxTokens {
                 break
             }
             jsonMessages.insert(["role": message.role, "content": message.content], at: 0)
             totalTokens += messageTokens
         }
-        
+        print("totalTokens")
+        print(totalTokens)
         let parameters: [String: Any] = [
             "model": configManager.model,
             "messages": jsonMessages,
             "temperature": configManager.temperature
         ]
-        
+        print(jsonMessages)
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
             "Authorization": "Bearer \(configManager.anyscaleApiKey)"
