@@ -58,10 +58,11 @@ class ConfigManager: ObservableObject {
     
     @Published var anyscaleUrl: String = "https://api.endpoints.anyscale.com/v1/chat/completions"
     @Published var maxMessageLength: Int = 1000
-    @Published var freeMessageLimit: Int = 100
+    @Published var freeMessageLimit: Int = 5
     @Published var anyscaleApiKey: String = "esecret_ctyfftvnkwxucq3ftfhmqax14s"
-    @Published var model: String = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+    @Published var model: String = "mistralai/Mixtral-8x7B-Instruct-v0.1:akshit:UBXmwGF"
     @Published var temperature: Double = 0.7
+    @Published var requiredAppVersion: String = "1.0" // New property for app version
     
     private init() {
         setupRemoteConfig()
@@ -70,7 +71,7 @@ class ConfigManager: ObservableObject {
     private func setupRemoteConfig() {
         let remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 43200 // For development, set to 0. For production, set to a higher value.
+        settings.minimumFetchInterval = 10 // For development, set to 0. For production, set to a higher value.
         remoteConfig.configSettings = settings
         
         remoteConfig.setDefaults([
@@ -79,7 +80,8 @@ class ConfigManager: ObservableObject {
             "free_message_limit": self.freeMessageLimit as NSObject,
             "anyscale_api_key": self.anyscaleApiKey as NSObject,
             "model": self.model as NSObject,
-            "temperature": self.temperature as NSObject
+            "temperature": self.temperature as NSObject,
+            "required_app_version": self.requiredAppVersion as NSObject
         ])
     }
     
@@ -91,6 +93,9 @@ class ConfigManager: ObservableObject {
                 }
             } else {
                 print("Config fetch failed")
+                if let error = error {
+                    self?.logError(error)
+                }
             }
         }
     }
@@ -120,6 +125,24 @@ class ConfigManager: ObservableObject {
            
         if let temperature = remoteConfig["temperature"].numberValue as? Double {
                self.temperature = temperature
+        }
+        
+        if let requiredVersion = remoteConfig["required_app_version"].stringValue {
+            self.requiredAppVersion = requiredVersion
+        }
+    }
+    
+    func logError(_ error: Error) {
+        let userId = UserDefaults.standard.string(forKey: "userId") ?? "unknown"
+        let db = Firestore.firestore()
+        db.collection("errors").addDocument(data: [
+            "userId": userId,
+            "error": error.localizedDescription,
+            "timestamp": FieldValue.serverTimestamp()
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            }
         }
     }
 }
@@ -173,7 +196,8 @@ class PurchaseManager: NSObject, ObservableObject {
     }
     
     private func handlePurchased(_ transaction: SKPaymentTransaction) {
-        let expirationDate = Date().addingTimeInterval(30 * 24 * 60 * 60) // 30 days
+        let calendar = Calendar.current
+        let expirationDate = calendar.date(byAdding: .month, value: 1, to: Date())!
         UserDefaults.standard.set(expirationDate, forKey: "subscriptionExpirationDate")
         hasActiveSubscription = true
         SKPaymentQueue.default().finishTransaction(transaction)
@@ -295,6 +319,7 @@ struct ConversationListView: View {
     @State private var showingReferencesView = false
     @State private var showingPurchasePrompt = false
     @State private var showingSubscriptionView = false
+    @State private var showingUpdateAlert = false
 
     var body: some View {
         NavigationView {
@@ -350,9 +375,22 @@ struct ConversationListView: View {
                 secondaryButton: .cancel()
             )
         }
+        .alert(isPresented: $showingUpdateAlert) {
+            Alert(
+                title: Text("Update Available"),
+                message: Text("A new version of the app is available. Please update to continue using the app."),
+                primaryButton: .default(Text("Update")) {
+                    if let url = URL(string: "https://apps.apple.com/app/id6502342037") {
+                        UIApplication.shared.open(url)
+                    }
+                },
+                secondaryButton: .cancel()
+            )
+        }
         .onAppear {
             configManager.fetchConfig()
             checkAndPromptForSubscription()
+            checkForUpdates()
         }
     }
     
@@ -405,7 +443,7 @@ struct ConversationListView: View {
     }
     
     func startNewConversation() {
-        let newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello! How can I assist you today?")])
+        let newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello!How can I assist you today?")])
         conversationStore.conversations.append(newConversation)
         activeConversation = newConversation.id
         conversationStore.saveConversations()
@@ -426,6 +464,13 @@ struct ConversationListView: View {
     func checkAndPromptForSubscription() {
         if conversationStore.totalMessageCount >= configManager.freeMessageLimit && !purchaseManager.hasActiveSubscription {
             showingPurchasePrompt = true
+        }
+    }
+    
+    func checkForUpdates() {
+        if let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+           currentVersion.compare(configManager.requiredAppVersion, options: .numeric) == .orderedAscending {
+            showingUpdateAlert = true
         }
     }
 }
@@ -518,14 +563,14 @@ struct ReferencesView: View {
                     .font(.body)
                     .padding()
                 
-                    Spacer()
-                        }
-                        .navigationBarItems(trailing: Button("Close") {
-                            showingReferencesView = false
-                        })
-                    }
-                }
+                Spacer()
             }
+            .navigationBarItems(trailing: Button("Close") {
+                showingReferencesView = false
+            })
+        }
+    }
+}
 
 struct SubscriptionView: View {
     @Binding var showingSubscriptionView: Bool
@@ -568,7 +613,7 @@ struct SubscriptionView: View {
                     Button(action: {
                         purchaseManager.purchaseSubscription()
                     }) {
-                        Text("Subscribe for $10/month")
+                        Text("Subscribe for a month")
                             .font(.headline)
                             .foregroundColor(.white)
                             .padding()
@@ -760,6 +805,7 @@ struct SubscriptionView: View {
                     }
                 case .failure(let error):
                     print("Network error: \(error.localizedDescription)")
+                    ConfigManager.shared.logError(error)
                     let errorMessage = Message(role: "assistant", content: "Sorry, something went wrong. Please try again.")
                     DispatchQueue.main.async {
                         self.conversation.messages.append(errorMessage)
@@ -797,9 +843,9 @@ struct SubscriptionView: View {
                         .padding(.bottom, 10)
                     Spacer()
                 }
+            }
         }
     }
-}
 
     struct ChatBubble: Shape {
         var isFromCurrentUser: Bool
@@ -808,7 +854,7 @@ struct SubscriptionView: View {
             let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, isFromCurrentUser ? .bottomLeft : .bottomRight], cornerRadii: CGSize(width: 16, height: 16))
             return Path(path.cgPath)
         }
-}
+    }
 
                 @main
                 struct ChatApp: App {
