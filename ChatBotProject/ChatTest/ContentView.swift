@@ -2,6 +2,7 @@ import SwiftUI
 import Alamofire
 import os
 import Firebase
+import FirebaseAuth
 import FirebaseRemoteConfig
 import FirebaseFirestore
 import StoreKit
@@ -53,16 +54,60 @@ struct ChatCompletionMessage: Decodable {
 
 // MARK: - Managers
 
+class FirebaseManager {
+    static let shared = FirebaseManager()
+    
+    let db: Firestore
+    private(set) var userId: String = "anonymous"
+    
+    private init() {
+        FirebaseApp.configure()
+        self.db = Firestore.firestore()
+        setupUser()
+    }
+    
+    private func setupUser() {
+        if let user = Auth.auth().currentUser {
+            self.userId = user.uid
+            print("hit first")
+        } else {
+            Auth.auth().signInAnonymously { [weak self] authResult, error in
+                if let user = authResult?.user {
+                    self?.userId = user.uid
+                    UserDefaults.standard.set(user.uid, forKey: "userId")
+                    print("hit second")
+                } else if let error = error {
+                    print("Error signing in anonymously: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+    
+    func logError(_ error: Error) {
+        let errorCollection = db.collection("errors")
+        errorCollection.addDocument(data: [
+            "userId": userId,
+            "error": error.localizedDescription,
+            "timestamp": FieldValue.serverTimestamp()
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            }
+        }
+    }
+}
+
 class ConfigManager: ObservableObject {
     static let shared = ConfigManager()
     
     @Published var anyscaleUrl: String = "https://api.endpoints.anyscale.com/v1/chat/completions"
     @Published var maxMessageLength: Int = 1000
-    @Published var freeMessageLimit: Int = 5
+    @Published var freeMessageLimit: Int = 100
     @Published var anyscaleApiKey: String = "esecret_ctyfftvnkwxucq3ftfhmqax14s"
     @Published var model: String = "mistralai/Mixtral-8x7B-Instruct-v0.1:akshit:UBXmwGF"
     @Published var temperature: Double = 0.7
-    @Published var requiredAppVersion: String = "1.0" // New property for app version
+    @Published var requiredAppVersion: String = "1.0"
+    @Published var assistantfirst: Bool = true
     
     private init() {
         setupRemoteConfig()
@@ -71,7 +116,7 @@ class ConfigManager: ObservableObject {
     private func setupRemoteConfig() {
         let remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 10 // For development, set to 0. For production, set to a higher value.
+        settings.minimumFetchInterval = 10
         remoteConfig.configSettings = settings
         
         remoteConfig.setDefaults([
@@ -81,7 +126,8 @@ class ConfigManager: ObservableObject {
             "anyscale_api_key": self.anyscaleApiKey as NSObject,
             "model": self.model as NSObject,
             "temperature": self.temperature as NSObject,
-            "required_app_version": self.requiredAppVersion as NSObject
+            "required_app_version": self.requiredAppVersion as NSObject,
+            "assistantfirst": self.assistantfirst as NSObject
         ])
     }
     
@@ -94,7 +140,7 @@ class ConfigManager: ObservableObject {
             } else {
                 print("Config fetch failed")
                 if let error = error {
-                    self?.logError(error)
+                    FirebaseManager.shared.logError(error)
                 }
             }
         }
@@ -133,20 +179,7 @@ class ConfigManager: ObservableObject {
             if let requiredVersion = remoteConfig["required_app_version"].stringValue {
                 self.requiredAppVersion = requiredVersion
             }
-        }
-    }
-    
-    func logError(_ error: Error) {
-        let userId = UserDefaults.standard.string(forKey: "userId") ?? "unknown"
-        let db = Firestore.firestore()
-        db.collection("errors").addDocument(data: [
-            "userId": userId,
-            "error": error.localizedDescription,
-            "timestamp": FieldValue.serverTimestamp()
-        ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-            }
+            self.assistantfirst = remoteConfig["assistantfirst"].boolValue
         }
     }
 }
@@ -156,6 +189,8 @@ class PurchaseManager: NSObject, ObservableObject {
     
     @Published var hasActiveSubscription = false
     @Published var isLoading = false
+    @Published var subscriptionEndDate: Date?
+    @Published var showConfirmation = false
     
     private let productIdentifier = "com.echobot.monthlysubscription"
     private var product: SKProduct?
@@ -191,21 +226,41 @@ class PurchaseManager: NSObject, ObservableObject {
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
     
-    private func checkSubscriptionStatus() {
-        if let expirationDate = UserDefaults.standard.object(forKey: "subscriptionExpirationDate") as? Date {
-            hasActiveSubscription = expirationDate > Date()
-        } else {
-            hasActiveSubscription = false
+    func checkSubscriptionStatus() {
+            print("DEBUG: checkSubscriptionStatus called")
+            if let expirationDate = UserDefaults.standard.object(forKey: "subscriptionExpirationDate") as? Date {
+                DispatchQueue.main.async {
+                    self.hasActiveSubscription = expirationDate > Date()
+                    self.subscriptionEndDate = expirationDate
+                    print("DEBUG: hasActiveSubscription set to \(self.hasActiveSubscription)")
+                    print("DEBUG: subscriptionEndDate set to \(expirationDate)")
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.hasActiveSubscription = false
+                    self.subscriptionEndDate = nil
+                    print("DEBUG: No subscription found")
+                }
+            }
         }
-    }
     
     private func handlePurchased(_ transaction: SKPaymentTransaction) {
-        let calendar = Calendar.current
-        let expirationDate = calendar.date(byAdding: .month, value: 1, to: Date())!
-        UserDefaults.standard.set(expirationDate, forKey: "subscriptionExpirationDate")
-        hasActiveSubscription = true
-        SKPaymentQueue.default().finishTransaction(transaction)
-    }
+            print("DEBUG: handlePurchased called")
+            let calendar = Calendar.current
+            let expirationDate = calendar.date(byAdding: .month, value: 1, to: Date())!
+            UserDefaults.standard.set(expirationDate, forKey: "subscriptionExpirationDate")
+            print("DEBUG: Expiration date set to \(expirationDate)")
+            DispatchQueue.main.async {
+                self.hasActiveSubscription = true
+                self.subscriptionEndDate = expirationDate
+                self.showConfirmation = true
+                print("DEBUG: hasActiveSubscription set to true")
+                print("DEBUG: subscriptionEndDate set to \(expirationDate)")
+                print("DEBUG: showConfirmation set to true")
+            }
+            SKPaymentQueue.default().finishTransaction(transaction)
+            print("DEBUG: Transaction finished")
+        }
 }
 
 extension PurchaseManager: SKProductsRequestDelegate {
@@ -226,15 +281,21 @@ extension PurchaseManager: SKPaymentTransactionObserver {
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
             switch transaction.transactionState {
-            case .purchased, .restored:
+            case .purchased:
+                print("DEBUG: Transaction purchased")
+                handlePurchased(transaction)
+            case .restored:
+                print("DEBUG: Transaction restored")
                 handlePurchased(transaction)
             case .failed:
-                print("Transaction failed: \(transaction.error?.localizedDescription ?? "")")
+                print("DEBUG: Transaction failed: \(transaction.error?.localizedDescription ?? "")")
                 SKPaymentQueue.default().finishTransaction(transaction)
-            case .deferred, .purchasing:
-                break
+            case .deferred:
+                print("DEBUG: Transaction deferred")
+            case .purchasing:
+                print("DEBUG: Transaction purchasing")
             @unknown default:
-                break
+                print("DEBUG: Unknown transaction state")
             }
         }
     }
@@ -243,18 +304,11 @@ extension PurchaseManager: SKPaymentTransactionObserver {
 class ConversationStore: ObservableObject {
     @Published var conversations: [Conversation] = []
     @Published var totalMessageCount: Int = 0
-    let userId: String
+    private var lastBackupTime: Date = Date.distantPast
     
-    private var db = Firestore.firestore()
+    private let firebaseManager = FirebaseManager.shared
     
     init() {
-        if let storedUserId = UserDefaults.standard.string(forKey: "userId") {
-            self.userId = storedUserId
-        } else {
-            let newUserId = UUID().uuidString
-            UserDefaults.standard.set(newUserId, forKey: "userId")
-            self.userId = newUserId
-        }
         loadConversations()
     }
     
@@ -280,8 +334,16 @@ class ConversationStore: ObservableObject {
         totalMessageCount = conversations.reduce(0) { $0 + $1.messages.count }
     }
     
+    func backupIfNeeded(conversation: Conversation) {
+        let currentTime = Date()
+        if currentTime.timeIntervalSince(lastBackupTime) >= 300 { // 5 minutes
+            backupToFirebase(conversation: conversation)
+            lastBackupTime = currentTime
+        }
+    }
+    
     func backupToFirebase(conversation: Conversation) {
-        let conversationRef = db.collection("users").document(userId).collection("conversations").document(conversation.id.uuidString)
+        let conversationRef = firebaseManager.db.collection("users").document(firebaseManager.userId).collection("conversations").document(conversation.id.uuidString)
         
         conversationRef.getDocument { (document, error) in
             if let document = document, document.exists {
@@ -313,7 +375,7 @@ class ConversationStore: ObservableObject {
 // MARK: - Views
 
 struct ConversationListView: View {
-    @StateObject private var conversationStore = ConversationStore()
+    @StateObject var conversationStore: ConversationStore
     @StateObject private var configManager = ConfigManager.shared
     @StateObject private var purchaseManager = PurchaseManager.shared
     @Environment(\.colorScheme) var colorScheme
@@ -324,6 +386,7 @@ struct ConversationListView: View {
     @State private var showingPurchasePrompt = false
     @State private var showingSubscriptionView = false
     @State private var showingUpdateAlert = false
+    @State private var showingMenu = false
 
     var body: some View {
         NavigationView {
@@ -338,14 +401,18 @@ struct ConversationListView: View {
                         .foregroundColor(Color.blue)
                     Spacer()
                     Button(action: {
-                        showingSupportView = true
+                        showingMenu = true
                     }) {
-                        Image(systemName: "info.circle")
+                        Image(systemName: "ellipsis")
                             .font(.system(size: 24))
                             .foregroundColor(.blue)
                     }
-                    .sheet(isPresented: $showingSupportView) {
-                        SupportView(showingSupportView: $showingSupportView, showingReferencesView: $showingReferencesView)
+                    .actionSheet(isPresented: $showingMenu) {
+                        ActionSheet(title: Text("Menu"), buttons: [
+                            .default(Text("Support"), action: { showingSupportView = true }),
+                            .default(Text(purchaseManager.hasActiveSubscription ? "Manage Subscription" : "Subscribe"), action: { showingSubscriptionView = true }),
+                            .cancel()
+                        ])
                     }
                 }
                 .padding()
@@ -362,6 +429,9 @@ struct ConversationListView: View {
         .accentColor(colorScheme == .dark ? .white : .black)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             conversationStore.saveConversations()
+        }
+        .sheet(isPresented: $showingSupportView) {
+            SupportView(showingSupportView: $showingSupportView, showingReferencesView: $showingReferencesView)
         }
         .sheet(isPresented: $showingReferencesView) {
             ReferencesView(showingReferencesView: $showingReferencesView)
@@ -431,23 +501,16 @@ struct ConversationListView: View {
                     .cornerRadius(10)
             }
             .padding()
-            
-            Button(action: {
-                showingSubscriptionView = true
-            }) {
-                Text(purchaseManager.hasActiveSubscription ? "Manage Subscription" : "Subscribe")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(10)
-            }
-            .padding(.bottom)
         }
     }
-    
+        
     func startNewConversation() {
-        let newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello!How can I assist you today?")])
+        let newConversation: Conversation
+        if configManager.assistantfirst {
+            newConversation = Conversation(messages: [Message(role: "assistant", content: "Hello! How can I assist you today?")])
+        } else {
+            newConversation = Conversation(messages: [])
+        }
         conversationStore.conversations.append(newConversation)
         activeConversation = newConversation.id
         conversationStore.saveConversations()
@@ -526,7 +589,7 @@ struct SupportView: View {
                     .bold()
                     .padding()
                 
-                Text("If you have any questions or need assistance, please contact our support team at echobot583@gmail.com ")
+                Text("If you have any questions or need assistance, please contact our support team at echobot583@gmail.com")
                     .font(.body)
                     .padding()
                 
@@ -594,8 +657,17 @@ struct SubscriptionView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                     
+                    if let endDate = purchaseManager.subscriptionEndDate {
+                        Text("Subscription ends on: \(endDate, formatter: dateFormatter)")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .padding()
+                    }
+                    
                     Button(action: {
-                        // Add action to manage subscription through App Store
+                        if let url = URL(string: "https://apps.apple.com/account/subscriptions") {
+                            UIApplication.shared.open(url)
+                        }
                     }) {
                         Text("Manage Subscription")
                             .font(.headline)
@@ -617,7 +689,7 @@ struct SubscriptionView: View {
                     Button(action: {
                         purchaseManager.purchaseSubscription()
                     }) {
-                        Text("Subscribe for a month")
+                        Text("Subscribe for $10/month")
                             .font(.headline)
                             .foregroundColor(.white)
                             .padding()
@@ -640,9 +712,25 @@ struct SubscriptionView: View {
             }
             .navigationBarItems(trailing: Button("Close") {
                 showingSubscriptionView = false
-            })
+                })
+        }
+        .alert(isPresented: $purchaseManager.showConfirmation) {
+            Alert(
+                title: Text("Subscription Successful"),
+                message: Text("Thank you for subscribing! Your subscription is now active."),
+                dismissButton: .default(Text("OK")) {
+                    showingSubscriptionView = false
+                }
+            )
         }
     }
+    
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter
+    }()
 }
 
     struct ChatView: View {
@@ -699,7 +787,7 @@ struct SubscriptionView: View {
                 }
             }
             .background(colorScheme == .dark ? Color.black : Color.white)
-            
+        
             HStack {
                 TextField("Type something", text: $messageText)
                     .padding(8)
@@ -742,7 +830,7 @@ struct SubscriptionView: View {
             SubscriptionView(showingSubscriptionView: $showingSubscriptionView)
         }
     }
-    
+        
     func sendMessage() {
         let trimmedMessage = messageText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedMessage.isEmpty else { return }
@@ -758,9 +846,7 @@ struct SubscriptionView: View {
         
         sendMessageToAnyscale(message: newMessage)
         
-        if conversation.messages.count % 2 == 0 {
-            conversationStore.backupToFirebase(conversation: conversation)
-        }
+        conversationStore.backupIfNeeded(conversation: conversation)
         
         conversationStore.saveConversations()
     }
@@ -770,28 +856,22 @@ struct SubscriptionView: View {
         
         var jsonMessages: [[String: String]] = []
         var totalTokens = 0
-        print("totalTokens")
-        print(totalTokens)
-        print("maxTokens")
-        print(maxTokens)
-        print("now printing text")
+        
         for message in conversation.messages.reversed() {
             let messageTokens = estimateTokenCount(message.content)
-            print(message)
             if totalTokens + messageTokens > maxTokens {
                 break
             }
             jsonMessages.insert(["role": message.role, "content": message.content], at: 0)
             totalTokens += messageTokens
         }
-        print("totalTokens")
-        print(totalTokens)
+        
         let parameters: [String: Any] = [
             "model": configManager.model,
             "messages": jsonMessages,
             "temperature": configManager.temperature
         ]
-        print(jsonMessages)
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
             "Authorization": "Bearer \(configManager.anyscaleApiKey)"
@@ -808,14 +888,12 @@ struct SubscriptionView: View {
                             self.conversation.messages.append(assistantMessage)
                             self.conversationStore.saveConversations()
                             
-                            if self.conversation.messages.count % 7 == 0 {
-                                self.conversationStore.backupToFirebase(conversation: self.conversation)
-                            }
+                            self.conversationStore.backupIfNeeded(conversation: self.conversation)
                         }
                     }
                 case .failure(let error):
                     print("Network error: \(error.localizedDescription)")
-                    ConfigManager.shared.logError(error)
+                    FirebaseManager.shared.logError(error)
                     let errorMessage = Message(role: "assistant", content: "Sorry, something went wrong. Please try again.")
                     DispatchQueue.main.async {
                         self.conversation.messages.append(errorMessage)
@@ -866,22 +944,22 @@ struct SubscriptionView: View {
         }
     }
 
-                @main
-                struct ChatApp: App {
-                    @StateObject private var conversationStore = ConversationStore()
-                    
-                    init() {
-                        setupFirebase()
-                    }
-                    
-                    var body: some Scene {
-                        WindowGroup {
-                            ConversationListView()
-                                .environmentObject(conversationStore)
-                        }
-                    }
-                    
-                    private func setupFirebase() {
-                        FirebaseApp.configure()
-                    }
-                }
+    @main
+    struct ChatApp: App {
+        @StateObject private var conversationStore: ConversationStore
+        
+        init() {
+            // Firebase is configured in FirebaseManager's init
+            _ = FirebaseManager.shared
+            
+            // Create the ConversationStore
+            _conversationStore = StateObject(wrappedValue: ConversationStore())
+        }
+        
+        var body: some Scene {
+            WindowGroup {
+                ConversationListView(conversationStore: conversationStore)
+                    .environmentObject(conversationStore)
+            }
+        }
+    }
