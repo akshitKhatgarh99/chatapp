@@ -184,6 +184,9 @@ class ConfigManager: ObservableObject {
     }
 }
 
+import SwiftUI
+import StoreKit
+
 class PurchaseManager: NSObject, ObservableObject {
     static let shared = PurchaseManager()
     
@@ -194,6 +197,8 @@ class PurchaseManager: NSObject, ObservableObject {
     
     private let productIdentifier = "com.echobot.monthlysubscription"
     private var product: SKProduct?
+    private var lastCheckTime: Date = Date.distantPast
+    private let checkInterval: TimeInterval = 300 // 5 minutes
     
     private override init() {
         super.init()
@@ -227,40 +232,49 @@ class PurchaseManager: NSObject, ObservableObject {
     }
     
     func checkSubscriptionStatus() {
-            print("DEBUG: checkSubscriptionStatus called")
-            if let expirationDate = UserDefaults.standard.object(forKey: "subscriptionExpirationDate") as? Date {
+        let currentTime = Date()
+        guard currentTime.timeIntervalSince(lastCheckTime) >= checkInterval else {
+            return
+        }
+        
+        lastCheckTime = currentTime
+        
+        if let receiptURL = Bundle.main.appStoreReceiptURL,
+           let receiptData = try? Data(contentsOf: receiptURL) {
+            let receiptString = receiptData.base64EncodedString(options: [])
+            
+            validateReceipt(receiptString) { [weak self] (isValid, expirationDate) in
                 DispatchQueue.main.async {
-                    self.hasActiveSubscription = expirationDate > Date()
-                    self.subscriptionEndDate = expirationDate
-                    print("DEBUG: hasActiveSubscription set to \(self.hasActiveSubscription)")
-                    print("DEBUG: subscriptionEndDate set to \(expirationDate)")
-                }
-            } else {
-                DispatchQueue.main.async {
-                    self.hasActiveSubscription = false
-                    self.subscriptionEndDate = nil
-                    print("DEBUG: No subscription found")
+                    self?.hasActiveSubscription = isValid
+                    self?.subscriptionEndDate = expirationDate
                 }
             }
+        } else {
+            self.hasActiveSubscription = false
+            self.subscriptionEndDate = nil
         }
+    }
+    
+    private func validateReceipt(_ receipt: String, completion: @escaping (Bool, Date?) -> Void) {
+        // TODO: Implement server-side receipt validation here
+        // This is a placeholder implementation
+        // You should send the receipt to your server and validate it with Apple's servers
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
+            let isValid = true // Simulating a successful validation
+            let expirationDate = Calendar.current.date(byAdding: .month, value: 1, to: Date())
+            completion(isValid, expirationDate)
+        }
+    }
     
     private func handlePurchased(_ transaction: SKPaymentTransaction) {
-            print("DEBUG: handlePurchased called")
-            let calendar = Calendar.current
-            let expirationDate = calendar.date(byAdding: .month, value: 1, to: Date())!
-            UserDefaults.standard.set(expirationDate, forKey: "subscriptionExpirationDate")
-            print("DEBUG: Expiration date set to \(expirationDate)")
-            DispatchQueue.main.async {
-                self.hasActiveSubscription = true
-                self.subscriptionEndDate = expirationDate
-                self.showConfirmation = true
-                print("DEBUG: hasActiveSubscription set to true")
-                print("DEBUG: subscriptionEndDate set to \(expirationDate)")
-                print("DEBUG: showConfirmation set to true")
-            }
-            SKPaymentQueue.default().finishTransaction(transaction)
-            print("DEBUG: Transaction finished")
+        print("DEBUG: handlePurchased called")
+        checkSubscriptionStatus()
+        DispatchQueue.main.async {
+            self.showConfirmation = true
         }
+        SKPaymentQueue.default().finishTransaction(transaction)
+        print("DEBUG: Transaction finished")
+    }
 }
 
 extension PurchaseManager: SKProductsRequestDelegate {
@@ -301,14 +315,20 @@ extension PurchaseManager: SKPaymentTransactionObserver {
     }
 }
 
+
 class ConversationStore: ObservableObject {
     @Published var conversations: [Conversation] = []
-    @Published var totalMessageCount: Int = 0
+    @Published var totalMessageCount: Int {
+        didSet {
+            UserDefaults.standard.set(totalMessageCount, forKey: "totalMessageCount")
+        }
+    }
     private var lastBackupTime: Date = Date.distantPast
     
     private let firebaseManager = FirebaseManager.shared
     
     init() {
+        self.totalMessageCount = UserDefaults.standard.integer(forKey: "totalMessageCount")
         loadConversations()
     }
     
@@ -317,7 +337,6 @@ class ConversationStore: ObservableObject {
         if let encodedData = try? encoder.encode(conversations) {
             UserDefaults.standard.set(encodedData, forKey: "conversations")
         }
-        updateTotalMessageCount()
     }
     
     func loadConversations() {
@@ -327,11 +346,22 @@ class ConversationStore: ObservableObject {
                 conversations = decodedConversations
             }
         }
-        updateTotalMessageCount()
     }
     
-    private func updateTotalMessageCount() {
-        totalMessageCount = conversations.reduce(0) { $0 + $1.messages.count }
+    func addMessage(to conversation: inout Conversation, message: Message) {
+        conversation.messages.append(message)
+        totalMessageCount += 1
+        saveConversations()
+    }
+    
+    func deleteConversation(at offsets: IndexSet) {
+        conversations.remove(atOffsets: offsets)
+        saveConversations()
+    }
+    
+    func deleteAllConversations() {
+        conversations.removeAll()
+        saveConversations()
     }
     
     func backupIfNeeded(conversation: Conversation) {
@@ -368,6 +398,20 @@ class ConversationStore: ObservableObject {
                     ] }
                 ])
             }
+        }
+    }
+    
+    func createNewConversation() -> Conversation {
+        let newConversation = Conversation(messages: [])
+        conversations.append(newConversation)
+        saveConversations()
+        return newConversation
+    }
+    
+    func updateConversation(_ updatedConversation: Conversation) {
+        if let index = conversations.firstIndex(where: { $0.id == updatedConversation.id }) {
+            conversations[index] = updatedConversation
+            saveConversations()
         }
     }
 }
@@ -535,8 +579,8 @@ struct ConversationListView: View {
     }
     
     func checkForUpdates() {
-        if let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
-           currentVersion.compare(configManager.requiredAppVersion, options: .numeric) == .orderedAscending {
+        let currentVersion = "1.0" // Hardcode the current app version here
+        if currentVersion.compare(configManager.requiredAppVersion, options: .numeric) == .orderedAscending {
             showingUpdateAlert = true
         }
     }
@@ -841,7 +885,7 @@ struct SubscriptionView: View {
         }
         
         let newMessage = Message(role: "user", content: trimmedMessage)
-        conversation.messages.append(newMessage)
+        conversationStore.addMessage(to: &conversation, message: newMessage)
         messageText = ""
         
         sendMessageToAnyscale(message: newMessage)
@@ -949,12 +993,15 @@ struct SubscriptionView: View {
         @StateObject private var conversationStore: ConversationStore
         
         init() {
-            // Firebase is configured in FirebaseManager's init
-            _ = FirebaseManager.shared
-            
-            // Create the ConversationStore
-            _conversationStore = StateObject(wrappedValue: ConversationStore())
-        }
+                // Initialize ConfigManager first
+                ConfigManager.shared.fetchConfig()
+                
+                // Firebase is configured in FirebaseManager's init
+                _ = FirebaseManager.shared
+                
+                // Create the ConversationStore
+                _conversationStore = StateObject(wrappedValue: ConversationStore())
+            }
         
         var body: some Scene {
             WindowGroup {
