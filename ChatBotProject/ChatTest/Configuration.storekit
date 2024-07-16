@@ -9,7 +9,7 @@
   "settings" : {
     "_applicationInternalID" : "6502342037",
     "_askToBuyEnabled" : false,
-    "_billingIssuesEnabled" : false,
+    "_billingIssuesEnabled" : true,
     "_compatibilityTimeRate" : {
       "3" : 6
     },

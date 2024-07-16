@@ -47,6 +47,8 @@ class PurchaseManager: ObservableObject {
             await updateSubscriptionStatus()
         }
         
+        setupTransactionListener()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(checkSubscriptionStatus), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
@@ -76,7 +78,7 @@ class PurchaseManager: ObservableObject {
             let result = try await product.purchase()
             switch result {
             case .success(let verificationResult):
-                await handlePurchased(verificationResult)
+                print("Purchase initiated successfully")
             case .userCancelled:
                 print("User cancelled the purchase")
             case .pending:
@@ -175,5 +177,17 @@ class PurchaseManager: ObservableObject {
             print("Purchase verification failed: \(error)")
             // Handle unverified transaction
         }
+    }
+
+    private func setupTransactionListener() {
+        Task.detached(priority: .background) {
+            for await result in Transaction.updates {
+                await self.handleTransactionUpdate(result)
+            }
+        }
+    }
+
+    private func handleTransactionUpdate(_ result: StoreKit.VerificationResult<StoreKit.Transaction>) async {
+        await self.handlePurchased(result)
     }
 }
