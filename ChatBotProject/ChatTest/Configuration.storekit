@@ -8,6 +8,8 @@
   ],
   "settings" : {
     "_applicationInternalID" : "6502342037",
+    "_askToBuyEnabled" : false,
+    "_billingIssuesEnabled" : false,
     "_compatibilityTimeRate" : {
       "3" : 6
     },
@@ -23,7 +25,10 @@
         "name" : "Load Products"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 1,
+          "type" : "purchase"
+        },
         "enabled" : false,
         "name" : "Purchase"
       },

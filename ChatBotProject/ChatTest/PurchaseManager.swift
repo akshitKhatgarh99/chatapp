@@ -13,8 +13,6 @@ class PurchaseManager: ObservableObject {
 
     private let productIdentifier = "com.echobot.monthlysubscription"
     private var product: Product?
-    private var validationTimer: Timer?
-    private let validationInterval: TimeInterval = 3 // Validate every hour
 
     private let signedDataVerifier: SignedDataVerifier
     private let storeEnvironment: Environment
@@ -47,8 +45,9 @@ class PurchaseManager: ObservableObject {
         Task {
             await fetchProducts()
             await updateSubscriptionStatus()
-            startPeriodicValidation()
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(checkSubscriptionStatus), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
     func fetchProducts() async {
@@ -99,11 +98,9 @@ class PurchaseManager: ObservableObject {
         }
     }
 
-    private func startPeriodicValidation() {
-        validationTimer = Timer.scheduledTimer(withTimeInterval: validationInterval, repeats: true) { [weak self] _ in
-            Task { [weak self] in
-                await self?.updateSubscriptionStatus()
-            }
+    @objc func checkSubscriptionStatus() {
+        Task {
+            await updateSubscriptionStatus()
         }
     }
 
@@ -127,8 +124,6 @@ class PurchaseManager: ObservableObject {
         }
     }
 
- 
-    
     private func validateTransaction(_ transactionResult: StoreKit.VerificationResult<StoreKit.Transaction>) async {
         do {
             switch transactionResult {
@@ -180,9 +175,5 @@ class PurchaseManager: ObservableObject {
             print("Purchase verification failed: \(error)")
             // Handle unverified transaction
         }
-    }
-
-    deinit {
-        validationTimer?.invalidate()
     }
 }

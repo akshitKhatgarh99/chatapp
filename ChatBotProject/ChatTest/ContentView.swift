@@ -155,11 +155,11 @@ class ConfigManager: ObservableObject {
             if let url = remoteConfig["anyscale_url"].stringValue {
                 self.anyscaleUrl = url
             }
-            
+            print(remoteConfig["anyscale_url"])
             if let length = remoteConfig["max_message_length"].numberValue as? Int {
                 self.maxMessageLength = length
             }
-
+            
             if let limit = remoteConfig["free_message_limit"].numberValue as? Int {
                 self.freeMessageLimit = limit
             }
@@ -171,7 +171,7 @@ class ConfigManager: ObservableObject {
             if let model = remoteConfig["model"].stringValue {
                 self.model = model
             }
-               
+            print(remoteConfig["model"])
             if let temperature = remoteConfig["temperature"].numberValue as? Double {
                 self.temperature = temperature
             }
@@ -454,7 +454,7 @@ struct ConversationListView: View {
     func checkForUpdates() {
         let currentVersion = "1.4" // Hardcode the current app version here
         if currentVersion.compare(configManager.requiredAppVersion, options: .numeric) == .orderedAscending {
-            showingUpdateAlert = true
+            showingUpdateAlert = false
         }
     }
 }
@@ -788,12 +788,21 @@ struct SubscriptionView: View {
             jsonMessages.insert(["role": message.role, "content": message.content], at: 0)
             totalTokens += messageTokens
         }
+        // If assistantFirst is true and the first message is not from assistant, add a greeting
+        if configManager.assistantfirst && jsonMessages.first?["role"] != "assistant" {
+            jsonMessages.insert(["role": "assistant", "content": "Hello! How can I assist you today?"], at: 0)
+        }
         
+        else if !configManager.assistantfirst && jsonMessages.first?["role"] != "user" {
+                jsonMessages.insert(["role": "user", "content": "Ok"], at: 0)
+            }
+    
         let parameters: [String: Any] = [
             "model": configManager.model,
             "messages": jsonMessages,
             "temperature": configManager.temperature
         ]
+        print(jsonMessages)
         
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
