@@ -1,0 +1,325 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncHTTPClient-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncHTTPClient-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncHTTPClient-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncHTTPClient-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncHTTPClient-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncHTTPClient-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/AnyAsyncSequence.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AnyAsyncSequence.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AnyAsyncSequence.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AnyAsyncSequence.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/AnyAsyncSequenceProucerDelete.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AnyAsyncSequenceProucerDelete.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AnyAsyncSequenceProucerDelete.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AnyAsyncSequenceProucerDelete.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/AsyncLazySequence.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncLazySequence.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncLazySequence.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/AsyncLazySequence.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClient+execute.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+execute.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+execute.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+execute.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClient+shutdown.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+shutdown.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+shutdown.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+shutdown.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientRequest+Prepared.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientRequest+Prepared.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/HTTPClientResponse.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClientResponse.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/SingleIteratorPrecondition.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SingleIteratorPrecondition.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/Transaction.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Transaction.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Transaction.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Transaction.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/AsyncAwait/Transaction+StateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Transaction+StateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Transaction+StateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Transaction+StateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Base64.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Base64.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Base64.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Base64.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/BestEffortHashableTLSConfiguration.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/BestEffortHashableTLSConfiguration.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/BestEffortHashableTLSConfiguration.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/BestEffortHashableTLSConfiguration.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Configuration+BrowserLike.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Configuration+BrowserLike.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Configuration+BrowserLike.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Configuration+BrowserLike.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionPool.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionPool.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionPool.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/ChannelHandler/HTTP1ProxyConnectHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ProxyConnectHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ProxyConnectHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ProxyConnectHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/ChannelHandler/SOCKSEventsHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SOCKSEventsHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SOCKSEventsHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SOCKSEventsHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/ChannelHandler/TLSEventsHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/TLSEventsHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/TLSEventsHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/TLSEventsHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP1/HTTP1ClientChannelHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ClientChannelHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ClientChannelHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ClientChannelHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP1/HTTP1Connection.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1Connection.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1Connection.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1Connection.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP1/HTTP1ConnectionStateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ConnectionStateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ConnectionStateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP1ConnectionStateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP2/HTTP2ClientRequestHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2ClientRequestHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2ClientRequestHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2ClientRequestHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP2/HTTP2Connection.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2Connection.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2Connection.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2Connection.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTP2/HTTP2IdleHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2IdleHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2IdleHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTP2IdleHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionEvent.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionEvent.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionEvent.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionEvent.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool+Factory.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Factory.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPConnectionPool+Manager.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Manager.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPExecutableRequest.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPExecutableRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPRequestStateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPRequestStateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPRequestStateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPRequestStateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/HTTPRequestStateMachine+Demand.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPRequestStateMachine+Demand.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPRequestStateMachine+Demand.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPRequestStateMachine+Demand.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/RequestBodyLength.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBodyLength.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBodyLength.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBodyLength.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/RequestFramingMetadata.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestFramingMetadata.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestFramingMetadata.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestFramingMetadata.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/RequestOptions.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestOptions.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestOptions.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestOptions.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+Backoff.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Backoff.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Backoff.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+Backoff.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP1Connections.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP1Connections.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP1Connections.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP1Connections.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP1StateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP1StateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP1StateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP1StateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP2Connections.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP2Connections.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP2Connections.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP2Connections.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+HTTP2StateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP2StateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP2StateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+HTTP2StateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+RequestQueue.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+RequestQueue.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+RequestQueue.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+RequestQueue.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionPool/State Machine/HTTPConnectionPool+StateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+StateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+StateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPConnectionPool+StateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/ConnectionTarget.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/ConnectionTarget.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/DeconstructedURL.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/DeconstructedURL.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/FileDownloadDelegate.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/FileDownloadDelegate.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/FoundationExtensions.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/FoundationExtensions.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient+HTTPCookie.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+HTTPCookie.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+HTTPCookie.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+HTTPCookie.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPClient+Proxy.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+Proxy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+Proxy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPClient+Proxy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/HTTPHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/HTTPHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/LRUCache.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/LRUCache.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/LRUCache.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/LRUCache.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOTransportServices/NWErrorHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/NWErrorHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/NWErrorHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/NWErrorHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOTransportServices/NWWaitingHandler.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/NWWaitingHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/NWWaitingHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/NWWaitingHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/NIOTransportServices/TLSConfiguration.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/TLSConfiguration.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/TLSConfiguration.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/TLSConfiguration.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RedirectState.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RedirectState.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RedirectState.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RedirectState.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RequestBag.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBag.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBag.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBag.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RequestBag+StateMachine.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBag+StateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBag+StateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestBag+StateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/RequestValidation.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestValidation.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestValidation.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/RequestValidation.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Scheme.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Scheme.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Scheme.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Scheme.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Singleton.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Singleton.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Singleton.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Singleton.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/SSLContextCache.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SSLContextCache.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SSLContextCache.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/SSLContextCache.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/StringConvertibleInstances.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/StringConvertibleInstances.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/StringConvertibleInstances.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/StringConvertibleInstances.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/UnsafeTransfer.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/UnsafeTransfer.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/UnsafeTransfer.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/UnsafeTransfer.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/Sources/AsyncHTTPClient/Utils.swift" : {
+    "index-unit-output-path" : "/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Utils.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Utils.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/async-http-client/build/async-http-client.build/Release-iphoneos/AsyncHTTPClient.build/Objects-normal/arm64/Utils.o"
+  }
+}

@@ -5,9 +5,9 @@ import Firebase
 import FirebaseAuth
 import FirebaseRemoteConfig
 import FirebaseFirestore
-import StoreKit
 
 // MARK: - Models
+
 
 struct Message: Codable, Equatable, Identifiable {
     let id: UUID
@@ -61,7 +61,7 @@ class FirebaseManager {
     private(set) var userId: String = "anonymous"
     
     private init() {
-        FirebaseApp.configure()
+        // FirebaseApp.configure()
         self.db = Firestore.firestore()
         setupUser()
     }
@@ -107,7 +107,7 @@ class ConfigManager: ObservableObject {
     @Published var model: String = "mistralai/Mixtral-8x7B-Instruct-v0.1:akshit:UBXmwGF"
     @Published var temperature: Double = 0.7
     @Published var requiredAppVersion: String = "1.0"
-    @Published var assistantfirst: Bool = true
+    @Published var assistantfirst: Bool = false
     
     private init() {
         setupRemoteConfig()
@@ -116,7 +116,7 @@ class ConfigManager: ObservableObject {
     private func setupRemoteConfig() {
         let remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 10
+        settings.minimumFetchInterval = 40000
         remoteConfig.configSettings = settings
         
         remoteConfig.setDefaults([
@@ -184,136 +184,9 @@ class ConfigManager: ObservableObject {
     }
 }
 
-import SwiftUI
-import StoreKit
 
-class PurchaseManager: NSObject, ObservableObject {
-    static let shared = PurchaseManager()
-    
-    @Published var hasActiveSubscription = false
-    @Published var isLoading = false
-    @Published var subscriptionEndDate: Date?
-    @Published var showConfirmation = false
-    
-    private let productIdentifier = "com.echobot.monthlysubscription"
-    private var product: SKProduct?
-    private var lastCheckTime: Date = Date.distantPast
-    private let checkInterval: TimeInterval = 300 // 5 minutes
-    
-    private override init() {
-        super.init()
-        SKPaymentQueue.default().add(self)
-        fetchProducts()
-        checkSubscriptionStatus()
-    }
-    
-    func fetchProducts() {
-        let request = SKProductsRequest(productIdentifiers: Set([productIdentifier]))
-        request.delegate = self
-        request.start()
-    }
-    
-    func purchaseSubscription() {
-        guard let product = self.product else {
-            print("Product not found")
-            return
-        }
-        
-        if SKPaymentQueue.canMakePayments() {
-            let payment = SKPayment(product: product)
-            SKPaymentQueue.default().add(payment)
-        } else {
-            print("User can't make payments")
-        }
-    }
-    
-    func restorePurchases() {
-        SKPaymentQueue.default().restoreCompletedTransactions()
-    }
-    
-    func checkSubscriptionStatus() {
-        let currentTime = Date()
-        guard currentTime.timeIntervalSince(lastCheckTime) >= checkInterval else {
-            return
-        }
-        
-        lastCheckTime = currentTime
-        
-        if let receiptURL = Bundle.main.appStoreReceiptURL,
-           let receiptData = try? Data(contentsOf: receiptURL) {
-            let receiptString = receiptData.base64EncodedString(options: [])
-            
-            validateReceipt(receiptString) { [weak self] (isValid, expirationDate) in
-                DispatchQueue.main.async {
-                    self?.hasActiveSubscription = isValid
-                    self?.subscriptionEndDate = expirationDate
-                }
-            }
-        } else {
-            self.hasActiveSubscription = false
-            self.subscriptionEndDate = nil
-        }
-    }
-    
-    private func validateReceipt(_ receipt: String, completion: @escaping (Bool, Date?) -> Void) {
-        // TODO: Implement server-side receipt validation here
-        // This is a placeholder implementation
-        // You should send the receipt to your server and validate it with Apple's servers
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
-            let isValid = true // Simulating a successful validation
-            let expirationDate = Calendar.current.date(byAdding: .month, value: 1, to: Date())
-            completion(isValid, expirationDate)
-        }
-    }
-    
-    private func handlePurchased(_ transaction: SKPaymentTransaction) {
-        print("DEBUG: handlePurchased called")
-        checkSubscriptionStatus()
-        DispatchQueue.main.async {
-            self.showConfirmation = true
-        }
-        SKPaymentQueue.default().finishTransaction(transaction)
-        print("DEBUG: Transaction finished")
-    }
-}
 
-extension PurchaseManager: SKProductsRequestDelegate {
-    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        DispatchQueue.main.async { [weak self] in
-            if let product = response.products.first {
-                self?.product = product
-                print("Product fetched: \(product.localizedTitle)")
-            } else {
-                print("No products found")
-            }
-            self?.isLoading = false
-        }
-    }
-}
 
-extension PurchaseManager: SKPaymentTransactionObserver {
-    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        for transaction in transactions {
-            switch transaction.transactionState {
-            case .purchased:
-                print("DEBUG: Transaction purchased")
-                handlePurchased(transaction)
-            case .restored:
-                print("DEBUG: Transaction restored")
-                handlePurchased(transaction)
-            case .failed:
-                print("DEBUG: Transaction failed: \(transaction.error?.localizedDescription ?? "")")
-                SKPaymentQueue.default().finishTransaction(transaction)
-            case .deferred:
-                print("DEBUG: Transaction deferred")
-            case .purchasing:
-                print("DEBUG: Transaction purchasing")
-            @unknown default:
-                print("DEBUG: Unknown transaction state")
-            }
-        }
-    }
-}
 
 
 class ConversationStore: ObservableObject {
@@ -579,7 +452,7 @@ struct ConversationListView: View {
     }
     
     func checkForUpdates() {
-        let currentVersion = "1.0" // Hardcode the current app version here
+        let currentVersion = "1.4" // Hardcode the current app version here
         if currentVersion.compare(configManager.requiredAppVersion, options: .numeric) == .orderedAscending {
             showingUpdateAlert = true
         }
@@ -731,7 +604,9 @@ struct SubscriptionView: View {
                         .foregroundColor(.gray)
                     
                     Button(action: {
-                        purchaseManager.purchaseSubscription()
+                        Task {
+                                await purchaseManager.purchaseSubscription()
+                            }
                     }) {
                         Text("Subscribe for $10/month")
                             .font(.headline)
@@ -743,7 +618,9 @@ struct SubscriptionView: View {
                     .padding()
                     
                     Button(action: {
-                        purchaseManager.restorePurchases()
+                        Task {
+                                await purchaseManager.restorePurchases()
+                            }
                     }) {
                         Text("Restore Purchases")
                             .font(.subheadline)
@@ -879,6 +756,8 @@ struct SubscriptionView: View {
         let trimmedMessage = messageText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedMessage.isEmpty else { return }
         
+        print(conversationStore.totalMessageCount)
+        print(purchaseManager.hasActiveSubscription)
         if conversationStore.totalMessageCount >= configManager.freeMessageLimit && !purchaseManager.hasActiveSubscription {
             showingPurchasePrompt = true
             return
@@ -993,11 +872,13 @@ struct SubscriptionView: View {
         @StateObject private var conversationStore: ConversationStore
         
         init() {
+            
+                FirebaseApp.configure()
                 // Initialize ConfigManager first
                 ConfigManager.shared.fetchConfig()
                 
                 // Firebase is configured in FirebaseManager's init
-                _ = FirebaseManager.shared
+               // _ = FirebaseManager.shared
                 
                 // Create the ConversationStore
                 _conversationStore = StateObject(wrappedValue: ConversationStore())

@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/NIOEmbedded-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/NIOEmbedded-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/NIOEmbedded-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/NIOEmbedded-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/NIOEmbedded-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/NIOEmbedded-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/NIOEmbedded/AsyncTestingChannel.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/AsyncTestingChannel.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/AsyncTestingChannel.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/AsyncTestingChannel.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/NIOEmbedded/AsyncTestingEventLoop.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/AsyncTestingEventLoop.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/AsyncTestingEventLoop.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/AsyncTestingEventLoop.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/NIOEmbedded/Embedded.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/Embedded.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/Embedded.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOEmbedded.build/Objects-normal/arm64/Embedded.o"
+  }
+}

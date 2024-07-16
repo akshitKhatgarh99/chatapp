@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoBoringWrapper-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoBoringWrapper-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoBoringWrapper-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoBoringWrapper-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoBoringWrapper-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoBoringWrapper-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/CryptoBoringWrapper/AEAD/BoringSSLAEAD.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/BoringSSLAEAD.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/BoringSSLAEAD.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/BoringSSLAEAD.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/CryptoBoringWrapper/CryptoKitErrors_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoKitErrors_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoKitErrors_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/CryptoBoringWrapper.build/Objects-normal/arm64/CryptoKitErrors_boring.o"
+  }
+}

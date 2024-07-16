@@ -1,0 +1,4 @@
+module CNIOAtomics {
+umbrella header "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+export *
+}

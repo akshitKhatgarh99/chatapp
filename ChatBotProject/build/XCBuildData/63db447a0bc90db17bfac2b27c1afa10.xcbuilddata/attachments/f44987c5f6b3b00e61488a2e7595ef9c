@@ -1,0 +1,270 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTKit-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTKit-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTKit-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTKit-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/AudienceClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/AudienceClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/AudienceClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/AudienceClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/BoolClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/BoolClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/BoolClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/BoolClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/ExpirationClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ExpirationClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ExpirationClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ExpirationClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/GoogleHostedDomainClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/GoogleHostedDomainClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/GoogleHostedDomainClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/GoogleHostedDomainClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/IDClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IDClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IDClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IDClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/IssuedAtClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IssuedAtClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IssuedAtClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IssuedAtClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/IssuerClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IssuerClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IssuerClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/IssuerClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/JWTClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/JWTMultiValueClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTMultiValueClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTMultiValueClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTMultiValueClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/JWTUnixEpochClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTUnixEpochClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTUnixEpochClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTUnixEpochClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/LocaleClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/LocaleClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/LocaleClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/LocaleClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/NotBeforeClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/NotBeforeClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/NotBeforeClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/NotBeforeClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Claims/SubjectClaim.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/SubjectClaim.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/SubjectClaim.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/SubjectClaim.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/ECDSA/ECDSAError.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSAError.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSAError.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSAError.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/ECDSA/ECDSAKey.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSAKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSAKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSAKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/ECDSA/ECDSASigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSASigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSASigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/ECDSASigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/ECDSA/JWTSigner+ECDSA.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+ECDSA.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+ECDSA.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+ECDSA.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/EdDSA/EdDSAError.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSAError.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSAError.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSAError.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/EdDSA/EdDSAKey.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSAKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSAKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSAKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/EdDSA/EdDSASigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSASigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSASigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/EdDSASigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/EdDSA/JWTSigner+EdDSA.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+EdDSA.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+EdDSA.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+EdDSA.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/EdDSA/OctetKeyPair.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/OctetKeyPair.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/OctetKeyPair.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/OctetKeyPair.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/HMAC/HMACError.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/HMACError.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/HMACError.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/HMACError.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/HMAC/HMACSigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/HMACSigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/HMACSigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/HMACSigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/HMAC/JWTSigner+HMAC.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+HMAC.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+HMAC.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+HMAC.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWK/JWK.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWK.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWK.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWK.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWK/JWKIdentifier.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWKIdentifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWKIdentifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWKIdentifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWK/JWKS.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWKS.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWKS.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWKS.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTAlgorithm.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTAlgorithm.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTAlgorithm.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTAlgorithm.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTError.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTError.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTError.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTError.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTHeader.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTHeader.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTHeader.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTHeader.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTParser.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTParser.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTParser.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTParser.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTPayload.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTPayload.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTPayload.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTPayload.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTSerializer.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSerializer.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSerializer.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSerializer.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTSigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/JWTSigners.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigners.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigners.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigners.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/None/JWTSigner+UnsecuredNone.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+UnsecuredNone.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+UnsecuredNone.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+UnsecuredNone.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/None/UnsecuredNoneSigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/UnsecuredNoneSigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/UnsecuredNoneSigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/UnsecuredNoneSigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/RSA/JWTSigner+RSA.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+RSA.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+RSA.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/JWTSigner+RSA.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/RSA/RSAError.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSAError.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSAError.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSAError.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/RSA/RSAKey.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSAKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSAKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSAKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/RSA/RSASigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSASigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSASigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/RSASigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Utilities/Base64URL.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Base64URL.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Base64URL.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Base64URL.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Utilities/BigNumber.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/BigNumber.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/BigNumber.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/BigNumber.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Utilities/CustomizedJSONCoders.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/CustomizedJSONCoders.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/CustomizedJSONCoders.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/CustomizedJSONCoders.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Utilities/Exports.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Exports.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Utilities/OpenSSLSigner.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/OpenSSLSigner.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/OpenSSLSigner.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/OpenSSLSigner.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Utilities/Utilities.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Utilities.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Utilities.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/Utilities.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Vendor/AppleIdentityToken.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/AppleIdentityToken.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/AppleIdentityToken.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/AppleIdentityToken.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Vendor/GoogleIdentityToken.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/GoogleIdentityToken.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/GoogleIdentityToken.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/GoogleIdentityToken.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/Vendor/MicrosoftIdentitiyToken.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/MicrosoftIdentitiyToken.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/MicrosoftIdentitiyToken.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/MicrosoftIdentitiyToken.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/Sources/JWTKit/X5CVerifier.swift" : {
+    "index-unit-output-path" : "/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/X5CVerifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/X5CVerifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/jwt-kit/build/jwt-kit.build/Release-iphoneos/JWTKit.build/Objects-normal/arm64/X5CVerifier.o"
+  }
+}

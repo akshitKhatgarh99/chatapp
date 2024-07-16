@@ -1,0 +1,4 @@
+module CNIODarwin {
+umbrella header "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/CNIODarwin/include/CNIODarwin.h"
+export *
+}

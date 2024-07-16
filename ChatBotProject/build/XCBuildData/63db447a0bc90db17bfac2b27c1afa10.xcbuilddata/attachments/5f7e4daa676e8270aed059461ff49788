@@ -1,0 +1,505 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/X509-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/X509-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/X509-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/X509-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/X509-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/X509-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Certificate.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Certificate.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Certificate.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Certificate.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CertificatePrivateKey.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificatePrivateKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificatePrivateKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificatePrivateKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CertificatePublicKey.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificatePublicKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificatePublicKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificatePublicKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CertificateSerialNumber.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateSerialNumber.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateSerialNumber.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateSerialNumber.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CertificateVersion.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateVersion.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateVersion.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateVersion.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSAttribute.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSAttribute.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSAttribute.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSAttribute.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSContentInfo.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSContentInfo.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSContentInfo.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSContentInfo.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSEncapsulatedContentInfo.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSEncapsulatedContentInfo.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSEncapsulatedContentInfo.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSEncapsulatedContentInfo.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSIssuerAndSerialNumber.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSIssuerAndSerialNumber.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSIssuerAndSerialNumber.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSIssuerAndSerialNumber.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSOperations.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSOperations.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSOperations.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSOperations.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSSignature.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignature.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignature.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignature.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSSignedData.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignedData.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignedData.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignedData.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSSignerIdentifier.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignerIdentifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignerIdentifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignerIdentifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSSignerInfo.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignerInfo.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignerInfo.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSSignerInfo.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CryptographicMessageSyntax/CMSVersion.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSVersion.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSVersion.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CMSVersion.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CSR/CertificateSigningRequest.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateSigningRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateSigningRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateSigningRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CSR/CertificationRequestInfo.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificationRequestInfo.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificationRequestInfo.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificationRequestInfo.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CSR/CSRAttribute.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRAttribute.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRAttribute.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRAttribute.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CSR/CSRAttributes.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRAttributes.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRAttributes.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRAttributes.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CSR/CSRVersion.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRVersion.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRVersion.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CSRVersion.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/CSR/ExtensionRequest.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Digests.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Digests.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Digests.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Digests.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DistinguishedName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DistinguishedName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DistinguishedName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/CommonName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CommonName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CommonName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CommonName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/CountryName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CountryName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CountryName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CountryName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/DNBuilder.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DNBuilder.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DNBuilder.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DNBuilder.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/LocalityName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/LocalityName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/LocalityName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/LocalityName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/OrganizationalUnitName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OrganizationalUnitName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OrganizationalUnitName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OrganizationalUnitName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/OrganizationName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OrganizationName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OrganizationName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OrganizationName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/StateOrProvinceName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/StateOrProvinceName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/StateOrProvinceName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/StateOrProvinceName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/DistinguishedNameBuilder/StreetAddress.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/StreetAddress.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/StreetAddress.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/StreetAddress.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Error.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Error.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Error.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Error.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/AuthorityInformationAccess.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AuthorityInformationAccess.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AuthorityInformationAccess.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AuthorityInformationAccess.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/AuthorityKeyIdentifier.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AuthorityKeyIdentifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AuthorityKeyIdentifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AuthorityKeyIdentifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/BasicConstraints.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicConstraints.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicConstraints.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicConstraints.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/ExtendedKeyUsage.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtendedKeyUsage.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtendedKeyUsage.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtendedKeyUsage.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/ExtensionIdentifiers.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionIdentifiers.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionIdentifiers.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionIdentifiers.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/KeyUsage.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/KeyUsage.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/KeyUsage.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/KeyUsage.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/NameConstraints.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/NameConstraints.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/NameConstraints.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/NameConstraints.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/SubjectAlternativeName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectAlternativeName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectAlternativeName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectAlternativeName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension Types/SubjectKeyIdentifier.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectKeyIdentifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectKeyIdentifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectKeyIdentifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extension.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Extension.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Extension.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Extension.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Extensions.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Extensions.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/ExtensionsBuilder.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionsBuilder.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionsBuilder.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExtensionsBuilder.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/GeneralName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/GeneralName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/GeneralName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/GeneralName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/LockedValueBox.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/LockedValueBox.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/LockedValueBox.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/LockedValueBox.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/BasicOCSPResponse.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicOCSPResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicOCSPResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicOCSPResponse.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/DirectoryString.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DirectoryString.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DirectoryString.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DirectoryString.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPCertID.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPCertID.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPCertID.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPCertID.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPCertStatus.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPCertStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPCertStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPCertStatus.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPExtensionID.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPExtensionID.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPExtensionID.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPExtensionID.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPNonce.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPNonce.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPNonce.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPNonce.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPRequest.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPResponse.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponse.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPResponseBytes.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseBytes.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseBytes.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseBytes.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPResponseData.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseData.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseData.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseData.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPResponseStatus.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPResponseStatus.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPSignature.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSignature.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSignature.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSignature.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPSingleRequest.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSingleRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSingleRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSingleRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPSingleResponse.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSingleResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSingleResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPSingleResponse.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPTBSRequest.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPTBSRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPTBSRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPTBSRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/OCSP/OCSPVersion.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPVersion.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPVersion.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OCSPVersion.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/PKCS8PrivateKey.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PKCS8PrivateKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PKCS8PrivateKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PKCS8PrivateKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/PromiseAndFuture.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PromiseAndFuture.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PromiseAndFuture.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PromiseAndFuture.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/RandomNumberGenerator+bytes.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RandomNumberGenerator+bytes.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RandomNumberGenerator+bytes.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RandomNumberGenerator+bytes.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/RDNAttribute.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RDNAttribute.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RDNAttribute.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RDNAttribute.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/RelativeDistinguishedName.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RelativeDistinguishedName.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RelativeDistinguishedName.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RelativeDistinguishedName.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/SEC1PrivateKey.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SEC1PrivateKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SEC1PrivateKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SEC1PrivateKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Signature.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Signature.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Signature.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Signature.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/SignatureAlgorithm.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SignatureAlgorithm.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SignatureAlgorithm.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SignatureAlgorithm.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/AllOfPolicies.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AllOfPolicies.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AllOfPolicies.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AllOfPolicies.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/AnyPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AnyPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AnyPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AnyPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/CertificateStore.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateStore.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateStore.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/CertificateStore.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/OneOfPolicies.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OneOfPolicies.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OneOfPolicies.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/OneOfPolicies.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/PolicyBuilder.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PolicyBuilder.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PolicyBuilder.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/PolicyBuilder.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/BasicConstraintsPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicConstraintsPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicConstraintsPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/BasicConstraintsPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/DirectoryNames.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DirectoryNames.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DirectoryNames.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DirectoryNames.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/DNSNames.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DNSNames.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DNSNames.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/DNSNames.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/ExpiryPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExpiryPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExpiryPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ExpiryPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/IPConstraints.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/IPConstraints.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/IPConstraints.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/IPConstraints.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/NameConstraintsPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/NameConstraintsPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/NameConstraintsPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/NameConstraintsPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/RFC5280Policy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RFC5280Policy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RFC5280Policy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RFC5280Policy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/URIConstraints.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/URIConstraints.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/URIConstraints.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/URIConstraints.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/RFC5280/VersionPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VersionPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VersionPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VersionPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/ServerIdentityPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ServerIdentityPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ServerIdentityPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ServerIdentityPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/TrustRootLoading.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TrustRootLoading.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TrustRootLoading.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TrustRootLoading.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/UnverifiedChain.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/UnverifiedChain.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/UnverifiedChain.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/UnverifiedChain.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/VerificationDiagnostic.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VerificationDiagnostic.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VerificationDiagnostic.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VerificationDiagnostic.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/Verifier.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Verifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Verifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Verifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/Verifier/VerifierPolicy.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VerifierPolicy.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VerifierPolicy.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/VerifierPolicy.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/AlgorithmIdentifier.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AlgorithmIdentifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AlgorithmIdentifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/AlgorithmIdentifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/ECDSASignature.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ECDSASignature.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ECDSASignature.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/ECDSASignature.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/RSAPKCS1PublicKey.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RSAPKCS1PublicKey.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RSAPKCS1PublicKey.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/RSAPKCS1PublicKey.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/SubjectPublicKeyInfo.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectPublicKeyInfo.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectPublicKeyInfo.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/SubjectPublicKeyInfo.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/TBSCertificate.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TBSCertificate.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TBSCertificate.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TBSCertificate.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/Time.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Time.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Time.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Time.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/TimeCalculations.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TimeCalculations.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TimeCalculations.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/TimeCalculations.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/X509/X509BaseTypes/Validity.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Validity.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Validity.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/X509.build/Objects-normal/arm64/Validity.o"
+  }
+}

@@ -1,0 +1,4 @@
+module NIOSOCKS {
+header "NIOSOCKS-Swift.h"
+export *
+}

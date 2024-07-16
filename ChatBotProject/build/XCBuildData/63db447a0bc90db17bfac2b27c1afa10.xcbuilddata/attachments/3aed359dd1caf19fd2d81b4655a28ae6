@@ -1,0 +1,115 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/_CryptoExtras-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/_CryptoExtras-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/_CryptoExtras-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/_CryptoExtras-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/_CryptoExtras-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/_CryptoExtras-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/AES/AES_CBC.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CBC.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CBC.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CBC.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/AES/AES_CTR.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CTR.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CTR.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CTR.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/AES/AES_GCM_SIV.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_GCM_SIV.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_GCM_SIV.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_GCM_SIV.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/AES/Block Function.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/Block Function.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/Block Function.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/Block Function.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/AES/BoringSSL/AES_CTR_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CTR_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CTR_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_CTR_boring.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/AES/BoringSSL/AES_GCM_SIV_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_GCM_SIV_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_GCM_SIV_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/AES_GCM_SIV_boring.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/ChaCha20CTR/BoringSSL/ChaCha20CTR_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ChaCha20CTR_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ChaCha20CTR_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ChaCha20CTR_boring.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/ChaCha20CTR/ChaCha20CTR.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ChaCha20CTR.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ChaCha20CTR.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ChaCha20CTR.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/RSA/RSA_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA_boring.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/RSA/RSA_security.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA_security.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA_security.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA_security.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/RSA/RSA.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/RSA/RSA+BlindSigning.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA+BlindSigning.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA+BlindSigning.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RSA+BlindSigning.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/BoringSSLHelpers.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/BoringSSLHelpers.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/BoringSSLHelpers.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/BoringSSLHelpers.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/CryptoKitErrors_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/CryptoKitErrors_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/CryptoKitErrors_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/CryptoKitErrors_boring.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/DigestType.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/DigestType.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/DigestType.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/DigestType.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/Error.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/Error.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/Error.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/Error.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/PEMDocument.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/PEMDocument.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/PEMDocument.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/PEMDocument.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/RandomBytes.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RandomBytes.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RandomBytes.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/RandomBytes.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/Shared/ArbitraryPrecisionInteger_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ArbitraryPrecisionInteger_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ArbitraryPrecisionInteger_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/ArbitraryPrecisionInteger_boring.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/Sources/_CryptoExtras/Util/Shared/FiniteFieldArithmeticContext_boring.swift" : {
+    "index-unit-output-path" : "/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/FiniteFieldArithmeticContext_boring.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/FiniteFieldArithmeticContext_boring.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-crypto/build/swift-crypto.build/Release-iphoneos/_CryptoExtras.build/Objects-normal/arm64/FiniteFieldArithmeticContext_boring.o"
+  }
+}

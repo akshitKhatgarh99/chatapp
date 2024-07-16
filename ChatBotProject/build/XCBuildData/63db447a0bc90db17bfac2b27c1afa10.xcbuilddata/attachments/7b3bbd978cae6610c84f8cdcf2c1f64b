@@ -1,0 +1,320 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerLibrary-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerLibrary-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerLibrary-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerLibrary-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerLibrary-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerLibrary-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/AppStoreServerAPIClient.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerAPIClient.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerAPIClient.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppStoreServerAPIClient.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/ChainVerifier.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ChainVerifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ChainVerifier.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ChainVerifier.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/AccountTenure.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AccountTenure.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AccountTenure.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AccountTenure.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/AppTransaction.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppTransaction.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppTransaction.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AppTransaction.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/AutoRenewStatus.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AutoRenewStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AutoRenewStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/AutoRenewStatus.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/CheckTestNotificationResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/CheckTestNotificationResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/CheckTestNotificationResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/CheckTestNotificationResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ConsumptionRequest.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionRequest.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ConsumptionRequestReason.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionRequestReason.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionRequestReason.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionRequestReason.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ConsumptionStatus.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ConsumptionStatus.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/Data.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Data.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Data.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Data.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/DecodedSignedData.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/DecodedSignedData.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/DecodedSignedData.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/DecodedSignedData.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/DeliveryStatus.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/DeliveryStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/DeliveryStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/DeliveryStatus.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/Environment.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Environment.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Environment.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Environment.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ErrorPayload.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ErrorPayload.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ErrorPayload.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ErrorPayload.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ExpirationIntent.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExpirationIntent.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExpirationIntent.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExpirationIntent.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ExtendReasonCode.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendReasonCode.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendReasonCode.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendReasonCode.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ExtendRenewalDateRequest.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendRenewalDateRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendRenewalDateRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendRenewalDateRequest.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ExtendRenewalDateResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendRenewalDateResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendRenewalDateResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExtendRenewalDateResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ExternalPurchaseToken.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExternalPurchaseToken.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExternalPurchaseToken.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ExternalPurchaseToken.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/HistoryResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/HistoryResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/HistoryResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/HistoryResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/InAppOwnershipType.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/InAppOwnershipType.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/InAppOwnershipType.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/InAppOwnershipType.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/JWSRenewalInfoDecodedPayload.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/JWSRenewalInfoDecodedPayload.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/JWSRenewalInfoDecodedPayload.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/JWSRenewalInfoDecodedPayload.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/JWSTransactionDecodedPayload.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/JWSTransactionDecodedPayload.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/JWSTransactionDecodedPayload.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/JWSTransactionDecodedPayload.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/LastTransactionsItem.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LastTransactionsItem.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LastTransactionsItem.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LastTransactionsItem.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/LifetimeDollarsPurchased.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LifetimeDollarsPurchased.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LifetimeDollarsPurchased.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LifetimeDollarsPurchased.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/LifetimeDollarsRefunded.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LifetimeDollarsRefunded.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LifetimeDollarsRefunded.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/LifetimeDollarsRefunded.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/MassExtendRenewalDateRequest.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateRequest.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/MassExtendRenewalDateResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/MassExtendRenewalDateStatusResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateStatusResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateStatusResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/MassExtendRenewalDateStatusResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/NotificationHistoryRequest.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryRequest.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/NotificationHistoryResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/NotificationHistoryResponseItem.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryResponseItem.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryResponseItem.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationHistoryResponseItem.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/NotificationTypeV2.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationTypeV2.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationTypeV2.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/NotificationTypeV2.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/OfferDiscountType.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OfferDiscountType.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OfferDiscountType.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OfferDiscountType.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/OfferType.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OfferType.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OfferType.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OfferType.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/OrderLookupResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OrderLookupResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OrderLookupResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OrderLookupResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/OrderLookupStatus.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OrderLookupStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OrderLookupStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/OrderLookupStatus.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/Platform.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Platform.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Platform.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Platform.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/PlayTime.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PlayTime.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PlayTime.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PlayTime.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/PriceIncreaseStatus.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PriceIncreaseStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PriceIncreaseStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PriceIncreaseStatus.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ProductType.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ProductType.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ProductType.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ProductType.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/RefundHistoryResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RefundHistoryResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RefundHistoryResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RefundHistoryResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/RefundPreference.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RefundPreference.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RefundPreference.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RefundPreference.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ResponseBodyV2.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ResponseBodyV2.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ResponseBodyV2.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ResponseBodyV2.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/ResponseBodyV2DecodedPayload.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ResponseBodyV2DecodedPayload.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ResponseBodyV2DecodedPayload.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ResponseBodyV2DecodedPayload.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/RevocationReason.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RevocationReason.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RevocationReason.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/RevocationReason.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/SendAttemptItem.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendAttemptItem.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendAttemptItem.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendAttemptItem.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/SendAttemptResult.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendAttemptResult.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendAttemptResult.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendAttemptResult.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/SendTestNotificationResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendTestNotificationResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendTestNotificationResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SendTestNotificationResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/Status.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Status.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Status.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Status.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/StatusResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/StatusResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/StatusResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/StatusResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/SubscriptionGroupIdentifierItem.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SubscriptionGroupIdentifierItem.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SubscriptionGroupIdentifierItem.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SubscriptionGroupIdentifierItem.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/Subtype.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Subtype.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Subtype.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Subtype.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/Summary.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Summary.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Summary.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Summary.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/TransactionHistoryRequest.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionHistoryRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionHistoryRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionHistoryRequest.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/TransactionInfoResponse.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionInfoResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionInfoResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionInfoResponse.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/TransactionReason.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionReason.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionReason.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/TransactionReason.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Models/UserStatus.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/UserStatus.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/UserStatus.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/UserStatus.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/PromotionalOfferSignatureCreator.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PromotionalOfferSignatureCreator.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PromotionalOfferSignatureCreator.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/PromotionalOfferSignatureCreator.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/ReceiptUtility.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ReceiptUtility.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ReceiptUtility.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/ReceiptUtility.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/SignedDataVerifier.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SignedDataVerifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SignedDataVerifier.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/SignedDataVerifier.o"
+  },
+  "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/Sources/AppStoreServerLibrary/Utility.swift" : {
+    "index-unit-output-path" : "/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Utility.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Utility.bc",
+    "object" : "/Users/akshitkhatgarh/Desktop/Projects/echobot/apple/ChatBotProject/Packages/AppStoreServerLibrary/build/AppStoreServerLibrary.build/Release-iphoneos/AppStoreServerLibrary.build/Objects-normal/arm64/Utility.o"
+  }
+}

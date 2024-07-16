@@ -1,0 +1,100 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/SwiftASN1-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/SwiftASN1-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/SwiftASN1-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/SwiftASN1-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/SwiftASN1-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/SwiftASN1-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/ASN1.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ArraySliceBigint.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ArraySliceBigint.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ArraySliceBigint.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ArraySliceBigint.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1Any.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Any.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Any.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Any.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1BitString.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1BitString.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1BitString.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1BitString.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1Boolean.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Boolean.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Boolean.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Boolean.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1Identifier.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Identifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Identifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Identifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1Integer.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Integer.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Integer.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Integer.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1Null.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Null.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Null.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Null.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1OctetString.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1OctetString.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1OctetString.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1OctetString.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ASN1Strings.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Strings.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Strings.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ASN1Strings.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/GeneralizedTime.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/GeneralizedTime.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/GeneralizedTime.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/GeneralizedTime.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/ObjectIdentifier.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ObjectIdentifier.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ObjectIdentifier.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/ObjectIdentifier.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/PEMDocument.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/PEMDocument.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/PEMDocument.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/PEMDocument.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/TimeUtilities.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/TimeUtilities.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/TimeUtilities.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/TimeUtilities.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Basic ASN1 Types/UTCTime.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/UTCTime.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/UTCTime.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/UTCTime.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/BER.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/BER.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/BER.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/BER.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/DER.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/DER.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/DER.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/DER.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/Sources/SwiftASN1/Errors.swift" : {
+    "index-unit-output-path" : "/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/Errors.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/Errors.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-asn1/build/swift-asn1.build/Release-iphoneos/SwiftASN1.build/Objects-normal/arm64/Errors.o"
+  }
+}

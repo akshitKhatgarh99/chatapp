@@ -1,0 +1,70 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/NIOSOCKS-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/NIOSOCKS-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/NIOSOCKS-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/NIOSOCKS-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/NIOSOCKS-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/NIOSOCKS-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSClientHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSClientHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSClientHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSClientHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSServerHandshakeHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSServerHandshakeHandler.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSServerHandshakeHandler.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSServerHandshakeHandler.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/AuthenticationMethod.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/AuthenticationMethod.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/AuthenticationMethod.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/AuthenticationMethod.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/ClientGreeting.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ClientGreeting.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ClientGreeting.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ClientGreeting.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Errors.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Errors.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Errors.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Errors.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Helpers.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Helpers.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Helpers.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Helpers.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Messages.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Messages.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Messages.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/Messages.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SelectedAuthenticationMethod.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SelectedAuthenticationMethod.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SelectedAuthenticationMethod.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SelectedAuthenticationMethod.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSRequest.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSRequest.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSRequest.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSRequest.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSResponse.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSResponse.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSResponse.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/SOCKSResponse.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ClientStateMachine.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ClientStateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ClientStateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ClientStateMachine.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ServerStateMachine.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ServerStateMachine.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ServerStateMachine.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOSOCKS.build/Objects-normal/arm64/ServerStateMachine.o"
+  }
+}

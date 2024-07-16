@@ -1,0 +1,4 @@
+module JWTKit {
+header "JWTKit-Swift.h"
+export *
+}

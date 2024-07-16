@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_CertificateInternals-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_CertificateInternals-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_CertificateInternals-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_CertificateInternals-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_CertificateInternals-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_CertificateInternals-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/Sources/_CertificateInternals/_TinyArray.swift" : {
+    "index-unit-output-path" : "/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_TinyArray.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_TinyArray.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-certificates/build/swift-certificates.build/Release-iphoneos/_CertificateInternals.build/Objects-normal/arm64/_TinyArray.o"
+  }
+}

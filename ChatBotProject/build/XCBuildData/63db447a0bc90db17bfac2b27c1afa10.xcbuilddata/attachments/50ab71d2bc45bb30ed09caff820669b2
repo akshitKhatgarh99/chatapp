@@ -1,0 +1,4 @@
+module X509 {
+header "X509-Swift.h"
+export *
+}

@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/NIOFoundationCompat-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationCompat/ByteBuffer-foundation.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/ByteBuffer-foundation.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/ByteBuffer-foundation.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/ByteBuffer-foundation.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationCompat/Codable+ByteBuffer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/Codable+ByteBuffer.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/Codable+ByteBuffer.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/Codable+ByteBuffer.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/NIOFoundationCompat/JSONSerialization+ByteBuffer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/JSONSerialization+ByteBuffer.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/JSONSerialization+ByteBuffer.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/NIOFoundationCompat.build/Objects-normal/arm64/JSONSerialization+ByteBuffer.o"
+  }
+}

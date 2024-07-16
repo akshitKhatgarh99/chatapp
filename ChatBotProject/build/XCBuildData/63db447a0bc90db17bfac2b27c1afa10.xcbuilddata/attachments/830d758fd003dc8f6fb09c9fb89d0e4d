@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_NIODataStructures-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/_TinyArray.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/_TinyArray.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/Heap.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/Heap.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/Sources/_NIODataStructures/PriorityQueue.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release-iphoneos/_NIODataStructures.build/Objects-normal/arm64/PriorityQueue.o"
+  }
+}

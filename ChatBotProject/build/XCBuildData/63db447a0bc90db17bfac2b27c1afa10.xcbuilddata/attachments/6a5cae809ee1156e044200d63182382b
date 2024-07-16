@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/NIOHTTPCompression-master.swiftconstvalues",
+    "dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/NIOHTTPCompression-master.d",
+    "diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/NIOHTTPCompression-master.dia",
+    "emit-module-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/NIOHTTPCompression-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/NIOHTTPCompression-master-emit-module.dia",
+    "swift-dependencies" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/NIOHTTPCompression-master.swiftdeps"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPCompression.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPCompression.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPCompression.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPCompression.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPDecompression.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPDecompression.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPDecompression.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPDecompression.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestCompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPRequestCompressor.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPRequestCompressor.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPRequestCompressor.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestDecompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPRequestDecompressor.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPRequestDecompressor.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPRequestDecompressor.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseCompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPResponseCompressor.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPResponseCompressor.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPResponseCompressor.o"
+  },
+  "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseDecompressor.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPResponseDecompressor.o",
+    "llvm-bc" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPResponseDecompressor.bc",
+    "object" : "/Users/akshitkhatgarh/Library/Developer/Xcode/DerivedData/ChatTest-aqnpowrnbbzcscfnbsfqqliytcis/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release-iphoneos/NIOHTTPCompression.build/Objects-normal/arm64/HTTPResponseDecompressor.o"
+  }
+}

@@ -1,0 +1,4 @@
+module AppStoreServerLibrary {
+header "AppStoreServerLibrary-Swift.h"
+export *
+}

@@ -1,0 +1,4 @@
+module AsyncHTTPClient {
+header "AsyncHTTPClient-Swift.h"
+export *
+}
