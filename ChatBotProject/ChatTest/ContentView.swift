@@ -328,6 +328,16 @@ struct ConversationListView: View {
                         ActionSheet(title: Text("Menu"), buttons: [
                             .default(Text("Support"), action: { showingSupportView = true }),
                             .default(Text(purchaseManager.hasActiveSubscription ? "Manage Subscription" : "Subscribe"), action: { showingSubscriptionView = true }),
+                            .default(Text("Privacy Policy"), action: {
+                                        if let url = URL(string: "http://echobotapp.com/privacy") {
+                                            UIApplication.shared.open(url)
+                                        }
+                                    }),
+                            .default(Text("Terms of Use"), action: {
+                                if let url = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/") {
+                                    UIApplication.shared.open(url)
+                                }
+                            }),
                             .cancel()
                         ])
                     }
@@ -358,8 +368,8 @@ struct ConversationListView: View {
         }
         .alert(isPresented: $showingPurchasePrompt) {
             Alert(
-                title: Text("Upgrade to Monthly Subscription"),
-                message: Text("You've reached the free message limit for this month. Upgrade to continue chatting."),
+                title: Text("Upgrade to Monthly Subscription for $10/month"),
+                message: Text("You've reached the free message limit. Upgrade to continue chatting."),
                 primaryButton: .default(Text("Subscribe"), action: {
                     showingSubscriptionView = true
                 }),
@@ -562,11 +572,22 @@ struct SubscriptionView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 20) {
                 Text("Subscription")
                     .font(.largeTitle)
                     .bold()
                     .padding()
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Monthly Premium Subscription")
+                        .font(.headline)
+                    Text("Length: 1 month (auto-renewing)")
+                    Text("Price: $10.00 per month")
+                    Text("Benefit: Unlimited conversations with EchoBot")
+                }
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(10)
                 
                 if purchaseManager.hasActiveSubscription {
                     Text("You have an active subscription. Thank you for your support!")
@@ -595,14 +616,6 @@ struct SubscriptionView: View {
                     }
                     .padding()
                 } else {
-                    Text("Upgrade to Premium")
-                        .font(.headline)
-                        .padding()
-                    
-                    Text("Unlimited conversations with EchoBot")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                    
                     Button(action: {
                         Task {
                                 await purchaseManager.purchaseSubscription()
@@ -628,6 +641,19 @@ struct SubscriptionView: View {
                     }
                     .padding()
                 }
+                
+                VStack(spacing: 10) {
+                    Link("Privacy Policy", destination: URL(string: "http://echobotapp.com/privacy")!)
+                    Link("Terms of Use", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
+                }
+                .font(.footnote)
+                .foregroundColor(.blue)
+                
+                Text("Payment will be charged to your Apple ID account at the confirmation of purchase. Subscription automatically renews unless it is canceled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage and cancel your subscriptions by going to your account settings on the App Store after purchase.")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .padding()
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
             }

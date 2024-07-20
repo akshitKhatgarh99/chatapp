@@ -20,12 +20,12 @@ class PurchaseManager: ObservableObject {
     private let appAppleId: Int64
 
     private init() {
-        #if DEBUG
-        self.storeEnvironment = .xcode
-        print("Debug payment environment")
-        #else
+        //#if DEBUG
+        //self.storeEnvironment = .xcode
+        //print("Debug payment environment")
+        //#else
         self.storeEnvironment = .production
-        #endif
+        //#endif
         
         self.bundleId = Bundle.main.bundleIdentifier ?? ""
         self.appAppleId = 6502342037  // Replace with your app's Apple ID
@@ -79,6 +79,7 @@ class PurchaseManager: ObservableObject {
             switch result {
             case .success(let verificationResult):
                 print("Purchase initiated successfully")
+                await handlePurchased(verificationResult)
             case .userCancelled:
                 print("User cancelled the purchase")
             case .pending:
