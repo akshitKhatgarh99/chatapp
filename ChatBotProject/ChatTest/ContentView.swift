@@ -5,7 +5,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseRemoteConfig
 import FirebaseFirestore
-
+import StoreKit
 // MARK: - Models
 
 
@@ -680,18 +680,19 @@ struct SubscriptionView: View {
     }()
 }
 
-    struct ChatView: View {
-        @Binding var conversation: Conversation
-        var onEmptyConversation: () -> Void
-        @State private var messageText = ""
-        @Environment(\.colorScheme) var colorScheme
-        @Environment(\.presentationMode) var presentationMode
-        var conversationStore: ConversationStore
-        @StateObject private var configManager = ConfigManager.shared
-        @StateObject private var purchaseManager = PurchaseManager.shared
-        @State private var showingPurchasePrompt = false
-        @State private var showingSubscriptionView = false
-        
+struct ChatView: View {
+    @Binding var conversation: Conversation
+    var onEmptyConversation: () -> Void
+    @State private var messageText = ""
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) var presentationMode
+    var conversationStore: ConversationStore
+    @StateObject private var configManager = ConfigManager.shared
+    @StateObject private var purchaseManager = PurchaseManager.shared
+    @State private var showingPurchasePrompt = false
+    @State private var showingSubscriptionView = false
+    @FocusState private var isTextFieldFocused: Bool
+    
     var body: some View {
         VStack {
             HStack {
@@ -732,14 +733,21 @@ struct SubscriptionView: View {
                         proxy.scrollTo(conversation.messages.last?.id, anchor: .bottom)
                     }
                 }
+                .background(colorScheme == .dark ? Color.black : Color.white)
+                .gesture(
+                    TapGesture()
+                        .onEnded { _ in
+                            isTextFieldFocused = false
+                        }
+                )
             }
-            .background(colorScheme == .dark ? Color.black : Color.white)
         
             HStack {
                 TextField("Type something", text: $messageText)
                     .padding(8)
                     .background(colorScheme == .dark ? Color.gray.opacity(0.2) : Color.gray.opacity(0.1))
                     .cornerRadius(10)
+                    .focused($isTextFieldFocused)
                 
                 Button {
                     sendMessage()
@@ -917,6 +925,10 @@ struct SubscriptionView: View {
                 
                 // Create the ConversationStore
                 _conversationStore = StateObject(wrappedValue: ConversationStore())
+            
+            // Register for app installation tracking
+                    registerAppInstall()
+            
             }
         
         var body: some Scene {
@@ -925,4 +937,10 @@ struct SubscriptionView: View {
                     .environmentObject(conversationStore)
             }
         }
+        
+        private func registerAppInstall() {
+                if #available(iOS 14.0, *) {
+                    SKAdNetwork.registerAppForAdNetworkAttribution()
+                }
+            }
     }

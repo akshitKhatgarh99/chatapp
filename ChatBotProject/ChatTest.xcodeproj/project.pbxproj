@@ -27,6 +27,7 @@
 		7A1A05A1274977240080BB0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F34846E12C3D54E0003AEF5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3573B172C3AB4AE00C9FD30 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F387FDE22C4E0E1B00D683EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A751FC2C453DEE00C00863 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +89,7 @@
 				F34846E12C3D54E0003AEF5F /* GoogleService-Info.plist */,
 				7A1A059E274977240080BB0D /* Assets.xcassets */,
 				7A1A05A0274977240080BB0D /* Preview Content */,
+				F387FDE22C4E0E1B00D683EF /* Info.plist */,
 			);
 			path = ChatTest;
 			sourceTree = "<group>";
@@ -359,6 +361,7 @@
 				DEVELOPMENT_TEAM = R3JM7QQV27;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = ChatTest/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EchoBot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -369,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.44;
+				MARKETING_VERSION = 1.47;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepalace.EchoBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -395,6 +398,7 @@
 				DEVELOPMENT_TEAM = R3JM7QQV27;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = ChatTest/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EchoBot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -405,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.44;
+				MARKETING_VERSION = 1.47;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepalace.EchoBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

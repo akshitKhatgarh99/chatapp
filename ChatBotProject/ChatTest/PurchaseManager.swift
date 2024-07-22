@@ -52,6 +52,15 @@ class PurchaseManager: ObservableObject {
         NotificationCenter.default.addObserver(self, selector: #selector(checkSubscriptionStatus), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
+    
+    private func updateConversionValue() {
+        if #available(iOS 14.0, *) {
+            // You can customize this value based on your needs
+            let conversionValue: Int = self.hasActiveSubscription ? 1 : 0
+            SKAdNetwork.updateConversionValue(conversionValue)
+        }
+    }
+    
     func fetchProducts() async {
         isLoading = true
         do {
@@ -174,6 +183,7 @@ class PurchaseManager: ObservableObject {
             await validateTransaction(verificationResult)
             await transaction.finish()
             self.showConfirmation = true
+            updateConversionValue()
         case .unverified(_, let error):
             print("Purchase verification failed: \(error)")
             // Handle unverified transaction
