@@ -13,5 +13,21 @@
             <string>n38lu8286q.skadnetwork</string>
         </dict>
     </array>
+
+
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+  <key>CFBundleURLSchemes</key>
+  <array>
+    <string>fb1014302070106009</string>
+  </array>
+  </dict>
+</array>
+<key>FacebookAppID</key>
+<string>1014302070106009</string>
+<key>FacebookDisplayName</key>
+<string>echobot_vf</string>
+
 </dict>
 </plist>
