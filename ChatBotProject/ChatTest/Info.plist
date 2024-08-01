@@ -26,6 +26,8 @@
 </array>
 <key>FacebookAppID</key>
 <string>1014302070106009</string>
+<key>FacebookClientToken</key>
+<string>08c529624cde10df4a27243bc8f00ad5</string>
 <key>FacebookDisplayName</key>
 <string>echobot_vf</string>
 

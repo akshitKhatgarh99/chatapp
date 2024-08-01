@@ -6,6 +6,7 @@ import FirebaseAuth
 import FirebaseRemoteConfig
 import FirebaseFirestore
 import StoreKit
+import FBSDKCoreKit
 // MARK: - Models
 
 
@@ -101,8 +102,8 @@ class ConfigManager: ObservableObject {
     static let shared = ConfigManager()
     
     @Published var anyscaleUrl: String = "https://api.endpoints.anyscale.com/v1/chat/completions"
-    @Published var maxMessageLength: Int = 1000
-    @Published var freeMessageLimit: Int = 100
+    @Published var maxMessageLength: Int = 500
+    @Published var freeMessageLimit: Int = 30
     @Published var anyscaleApiKey: String = "esecret_ctyfftvnkwxucq3ftfhmqax14s"
     @Published var model: String = "mistralai/Mixtral-8x7B-Instruct-v0.1:akshit:UBXmwGF"
     @Published var temperature: Double = 0.7
@@ -116,7 +117,7 @@ class ConfigManager: ObservableObject {
     private func setupRemoteConfig() {
         let remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 40000
+        settings.minimumFetchInterval = 4000
         remoteConfig.configSettings = settings
         
         remoteConfig.setDefaults([
@@ -239,7 +240,7 @@ class ConversationStore: ObservableObject {
     
     func backupIfNeeded(conversation: Conversation) {
         let currentTime = Date()
-        if currentTime.timeIntervalSince(lastBackupTime) >= 300 { // 5 minutes
+        if currentTime.timeIntervalSince(lastBackupTime) >= 25 { // 5 minutes
             backupToFirebase(conversation: conversation)
             lastBackupTime = currentTime
         }
@@ -916,6 +917,12 @@ struct ChatView: View {
         
         init() {
             
+            // Initialize Facebook SDK
+                ApplicationDelegate.shared.application(UIApplication.shared, didFinishLaunchingWithOptions: nil)
+                    
+
+                
+            
                 FirebaseApp.configure()
                 // Initialize ConfigManager first
                 ConfigManager.shared.fetchConfig()
@@ -935,6 +942,10 @@ struct ChatView: View {
             WindowGroup {
                 ConversationListView(conversationStore: conversationStore)
                     .environmentObject(conversationStore)
+                    .onAppear {
+                                        // Activate App Events when the app becomes active
+                                        AppEvents.shared.activateApp()
+                                    }
             }
         }
         
